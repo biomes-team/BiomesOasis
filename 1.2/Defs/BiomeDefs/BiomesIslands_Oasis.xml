@@ -86,6 +86,52 @@
         <commonality>100</commonality>
       </li>
     </diseases>
+	<terrainsByFertility>
+	  <li>
+        <terrain>Sand</terrain>
+        <min>-999</min>
+        <max>-2</max>
+      </li>
+	  <li>
+        <terrain>Soil</terrain>
+        <min>-20</min>
+        <max>-1</max>
+      </li>
+	  <li>
+        <terrain>SoilRich</terrain>
+        <min>-1</min>
+        <max>0</max>
+      </li>
+	  <li>
+        <terrain>WaterShallow</terrain>
+        <min>0</min>
+        <max>1</max>
+      </li>
+	  <li>
+        <terrain>WaterDeep</terrain>
+        <min>1</min>
+        <max>999</max>
+      </li>
+	</terrainsByFertility>
+	<!--
+	<terrainsByFertility>
+      <li>
+        <terrain>Sand</terrain>
+        <min>-999</min>
+        <max>1</max>
+      </li>
+      <li>
+        <terrain>Soil</terrain>
+        <min>1.0</min>
+        <max>10.0</max>
+      </li>
+      <li>
+        <terrain>Mud</terrain>
+        <min>10.0</min>
+        <max>20.0</max>
+      </li>
+    </terrainsByFertility>
+	
     <terrainsByFertility>
       <li>
         <terrain>Sand</terrain>
@@ -120,22 +166,9 @@
         <minFertility>10.0</minFertility>
         <maxFertility>20.0</maxFertility>
         <thresholds>
-		<!--
-		  <li>
-            <terrain>Ice</terrain>
-            <min>-999</min>
-            <max>-0.4</max>
-          </li>
-		  -->
-		  <li>
-            <terrain>SoilRich</terrain>
-            <min>0.5</min>
-            <max>999</max>
-          </li>
-        </thresholds>
-      </li>
-	  
+
     </terrainPatchMakers>
+	 -->
     <baseWeatherCommonalities>
       <Clear>18</Clear>
       <Fog>1</Fog>
