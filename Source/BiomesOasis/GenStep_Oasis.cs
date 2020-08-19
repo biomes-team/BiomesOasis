@@ -90,15 +90,16 @@ namespace BiomesOasis.GenSteps
             {
                 oasisSize = Rand.Range(20f, 30f);
             }
+            MapGenFloatGrid elevation = MapGenerator.Elevation;
             foreach (IntVec3 current in map.AllCells)
             {
-                float distance = DistanceBetweenPoints(current, oasisCenter);
-                oasisGrid[current] = (moduleBase.GetValue(current) * perlinVariance ) + 0.1f * ((oasisSize) - (distance * distanceVariance));
+                elevation[current] = elevation[current] * 0.75f;
+                float distance = DistanceBetweenPoints(current, oasisCenter) / 1.5f;
+                oasisGrid[current] = ((moduleBase.GetValue(current) * perlinVariance ) + 0.1f * ((oasisSize) - (distance * distanceVariance))) - (elevation[current] * 11);
             }
             TerrainGrid terrainGrid = map.terrainGrid;
             TerrainDef richSoil = TerrainDef.Named("SoilRich");
             TerrainDef soil = TerrainDef.Named("Soil");
-            MapGenFloatGrid elevation = MapGenerator.Elevation;
             MapGenFloatGrid fertility = MapGenerator.Fertility;
             foreach (IntVec3 current in map.AllCells)
             {
