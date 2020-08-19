@@ -9,12 +9,10 @@
 	
 	<modExtensions>
         <li Class="BiomesCore.DefModExtensions.BiomesMap">
-			<hasHilliness>false</hasHilliness>
-			<hasScatterables>false</hasScatterables>
-			<minHillEncroachment>0.3</minHillEncroachment>
-			<maxHillEncroachment>0.6</maxHillEncroachment>
-            <minHillEdgeMultiplier>1.5</minHillEdgeMultiplier>
-            <maxHillEdgeMultiplier>1.5</maxHillEdgeMultiplier>
+			<minHillEncroachment>0</minHillEncroachment>
+			<maxHillEncroachment>0</maxHillEncroachment>
+            <minHillEdgeMultiplier>0</minHillEdgeMultiplier>
+            <maxHillEdgeMultiplier>0</maxHillEdgeMultiplier>
 			<isOasis>true</isOasis>
 		</li>
         <li Class="BiomesKit.BiomesKitControls">
