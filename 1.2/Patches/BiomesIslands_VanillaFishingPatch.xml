@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Fishing Expanded</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/VCE_Fishing.BiomeTempDef[defName="VCEF_BiomeWarm"]/biomes</xpath>
+				<value>	
+					<li>BiomesIslands_TemperateIsland</li>		
+					<li>BiomesIslands_BorealIsland</li>	
+					<li>BiomesIslands_DesertIsland</li>	
+					<li>BiomesIslands_TundraIsland</li>				
+				</value>
+			</li>
+		</operations>
+		</match>
+	</Operation>
+
+</Patch>
+

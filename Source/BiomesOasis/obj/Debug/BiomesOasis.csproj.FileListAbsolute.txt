@@ -1,0 +1,10 @@
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\BiomesOasis\Source\BiomesOasis\bin\Debug\BiomesOasis.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\BiomesOasis\Source\BiomesOasis\bin\Debug\BiomesOasis.pdb
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\BiomesOasis\Source\BiomesOasis\bin\Debug\BiomesCore.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\BiomesOasis\Source\BiomesOasis\bin\Debug\BiomesCore.pdb
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\BiomesOasis\Source\BiomesOasis\obj\Debug\BiomesOasis.csprojAssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\BiomesOasis\Source\BiomesOasis\obj\Debug\BiomesOasis.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\BiomesOasis\Source\BiomesOasis\obj\Debug\BiomesOasis.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\BiomesOasis\Source\BiomesOasis\obj\Debug\BiomesOasis.pdb
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\BiomesOasis\1.2\Assemblies\BiomesOasis.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\BiomesOasis\1.2\Assemblies\BiomesOasis.pdb

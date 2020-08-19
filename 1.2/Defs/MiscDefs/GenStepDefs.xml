@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <GenStepDef>
+    <defName>BiomesIslands_GenOasis</defName>
+    <order>231</order>
+    <genStep Class="BiomesOasis.GenSteps.GenStep_Oasis" />
+  </GenStepDef>
+
+</Defs>
