@@ -90,26 +90,26 @@
 	  <li>
         <terrain>Sand</terrain>
         <min>-999</min>
-        <max>-2</max>
+        <max>4</max>
       </li>
 	  <li>
         <terrain>Soil</terrain>
-        <min>-20</min>
-        <max>-1</max>
+        <min>4</min>
+        <max>5</max>
       </li>
 	  <li>
         <terrain>SoilRich</terrain>
-        <min>-1</min>
-        <max>0</max>
+        <min>5</min>
+        <max>8</max>
       </li>
 	  <li>
         <terrain>WaterShallow</terrain>
-        <min>0</min>
-        <max>1</max>
+        <min>8</min>
+        <max>15</max>
       </li>
 	  <li>
         <terrain>WaterDeep</terrain>
-        <min>1</min>
+        <min>15</min>
         <max>999</max>
       </li>
 	</terrainsByFertility>

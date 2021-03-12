@@ -22,7 +22,7 @@ namespace BiomesOasis.GenSteps
             }
         }
 
-        float oasisSize = Rand.Range(30f, 70f);
+        float oasisBaseSize = Rand.Range(30f, 30f);
         float beachSize = Rand.Range(30f, 50f);
         float distanceVariance = Rand.Range(1.0f, 1.5f);
         float perlinVariance = 5f;
@@ -41,7 +41,7 @@ namespace BiomesOasis.GenSteps
             MapGenFloatGrid oasisGrid = MapGenerator.FloatGridNamed("OasisGrid");
             IntVec3 oasisCenter = map.Center;
             ModuleBase moduleBase = new Perlin(Rand.Range(0.015f, 0.028f), 2.0, 0.5, 6, Rand.Range(0, 2147483647), QualityMode.Medium);
-            if (oasisSize >= 50f)
+            if (oasisBaseSize >= 50f)
             {
                 perlinVariance = 6f;
             }
@@ -58,7 +58,7 @@ namespace BiomesOasis.GenSteps
             Rot4 beachDirection = Find.World.CoastDirectionAt(map.Tile);
             if (isIsland == true)
             {
-                oasisSize = Rand.Range(20f, 30f);
+                //oasisBaseSize = Rand.Range(20f, 30f);
                 perlinVariance = 4f;
             }
             else
@@ -67,7 +67,7 @@ namespace BiomesOasis.GenSteps
                 {
                     // If it has a beach, the oasis is smaller with reduced variance
                     // Move the center of the oasis away from the beach
-                    oasisSize = Rand.Range(20f, 30f);
+                    //oasisBaseSize = Rand.Range(20f, 30f);
                     perlinVariance = 4f;
                     if (beachDirection == Rot4.North)
                     {
@@ -90,12 +90,22 @@ namespace BiomesOasis.GenSteps
             
             MapGenFloatGrid elevation = MapGenerator.Elevation;
             MapGenFloatGrid fertility = MapGenerator.Fertility;
-
+            Log.Message("Map size:" + map.Size.x);
+            float oasisSize = (oasisBaseSize / 10) * (map.Size.x / 10);
+            float perlin;
+            Log.Message("oasisSize:  " + oasisSize);
             foreach (IntVec3 current in map.AllCells)
             {
-                elevation[current] = elevation[current] * 0.75f;
-                float distance = DistanceBetweenPoints(current, oasisCenter) / 1.5f;
-                fertility[current] = ((moduleBase.GetValue(current) * perlinVariance) + 0.1f * ((oasisSize) - (distance * distanceVariance))) - (elevation[current] * 11);
+                float distance = (float)Math.Pow((DistanceBetweenPoints(oasisCenter, current) / 6), 2) + 10;
+                perlin = ((moduleBase.GetValue(current) + 1) * 7);
+                float elevationWeight = 20 * elevation[current];
+                float elevationPerlin = (((moduleBase.GetValue(current) + 1) * 10) * elevation[current]);
+                //fertility[current] = 1 + ((oasisSize * perlin) - (elevationWeight)) / distance;
+                fertility[current] = 1 + ((oasisSize) * elevationPerlin) / distance;
+                Log.Message("distance: " + distance);
+                Log.Message("fertility: " + fertility[current]);
+                if (elevation[current] > 0.65)
+                    fertility[current] = 0;
             }
 
 
