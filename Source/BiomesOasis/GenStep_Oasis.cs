@@ -23,11 +23,6 @@ namespace BiomesOasis.GenSteps
         }
 
         float oasisBaseSize = Rand.Range(30f, 30f);
-        float beachSize = Rand.Range(30f, 50f);
-        float distanceVariance = Rand.Range(1.0f, 1.5f);
-        float perlinVariance = 5f;
-        bool isIsland;
-        List<int> tmpNeighbors = new List<int>();
 
         public override void Generate(Map map, GenStepParams parms)
         {
@@ -42,60 +37,41 @@ namespace BiomesOasis.GenSteps
             MapGenFloatGrid oasisGrid = MapGenerator.FloatGridNamed("OasisGrid");
             IntVec3 oasisCenter = map.Center;
             ModuleBase moduleBase = new Perlin(Rand.Range(0.015f, 0.028f), 2.0, 0.5, 6, Rand.Range(0, 2147483647), QualityMode.Medium);
-            if (oasisBaseSize >= 50f)
-            {
-                perlinVariance = 6f;
-            }
+
             WorldGrid grid = Find.World.grid;
             int tileID = map.Tile;
-            grid.GetTileNeighbors(tileID, tmpNeighbors);
-            for (int i = 0; i < tmpNeighbors.Count; i++)
-            {
-                if (grid[tmpNeighbors[i]].biome != BiomeDefOf.Ocean)
-                {
-                    isIsland = false;
-                }
-            }
-            Rot4 beachDirection = Find.World.CoastDirectionAt(map.Tile);
-            if (isIsland == true)
-            {
-                //oasisBaseSize = Rand.Range(20f, 30f);
-                perlinVariance = 4f;
-            }
 
-            else
+
+            Rot4 beachDirection = Find.World.CoastDirectionAt(map.Tile);
+            if(beachDirection != null)
             {
-                if(beachDirection != null)
+                // If it has a beach, the oasis is smaller
+                // Move the center of the oasis away from the beach
+                if (beachDirection == Rot4.North)
                 {
-                    // If it has a beach, the oasis is smaller with reduced variance
-                    // Move the center of the oasis away from the beach
-                    //oasisBaseSize = Rand.Range(20f, 30f);
-                    perlinVariance = 4f;
-                    if (beachDirection == Rot4.North)
-                    {
-                        oasisCenter.z -= 10;
-                    }
-                    else if (beachDirection == Rot4.South)
-                    {
-                        oasisCenter.z += 10;
-                    }
-                    else if (beachDirection == Rot4.East)
-                    {
-                        oasisCenter.x -= 10;
-                    }
-                    else if (beachDirection == Rot4.West)
-                    {
-                        oasisCenter.x += 10;
-                    }
+                    oasisCenter.z -= 10;
+                }
+                else if (beachDirection == Rot4.South)
+                {
+                    oasisCenter.z += 10;
+                }
+                else if (beachDirection == Rot4.East)
+                {
+                    oasisCenter.x -= 10;
+                }
+                else if (beachDirection == Rot4.West)
+                {
+                    oasisCenter.x += 10;
                 }
             }
+            
             
             MapGenFloatGrid elevation = MapGenerator.Elevation;
             MapGenFloatGrid fertility = MapGenerator.Fertility;
             Log.Message("Map size:" + map.Size.x);
             float oasisSize = (oasisBaseSize / 10) * (map.Size.x / 10);
             float perlin;
-            Log.Message("oasisSize:  " + oasisSize);
+            Log.Message("Oasis size:  " + oasisSize);
 
             foreach (IntVec3 current in map.AllCells)
             {
