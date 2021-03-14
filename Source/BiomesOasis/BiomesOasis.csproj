@@ -63,8 +63,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BiomesOasis.cs" />
-    <Compile Include="ElevationFertilityPatch.cs" />
-    <Compile Include="GenStep_Oasis.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

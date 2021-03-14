@@ -5,6 +5,7 @@
     <defName>BMT_SundewPlant</defName>
     <label>bush</label>
     <description>A short shrub. Does not typically talk.</description>
+    <altitudeLayer>Building</altitudeLayer>
     <graphicData>
       <texPath>BMT_Oasis/Plant/Sundew</texPath>
       <graphicClass>Graphic_Random</graphicClass>
@@ -13,10 +14,8 @@
         <volume>(0.55, 0.2, 0.2)</volume>
       </shadowData>
     </graphicData>
-    <!-- <uiIconScale>0.85</uiIconScale> -->
     <plant>
       <growDays>6</growDays>
-      <!-- <leaflessGraphicPath>Things/Plant/Bush_Leafless</leaflessGraphicPath> -->
     </plant>
   </ThingDef>
   
