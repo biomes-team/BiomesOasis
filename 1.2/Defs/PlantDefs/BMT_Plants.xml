@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <ThingDef ParentName="BushBase">
+    <defName>BMT_SundewPlant</defName>
+    <label>bush</label>
+    <description>A short shrub. Does not typically talk.</description>
+    <graphicData>
+      <texPath>BMT_Oasis/Plant/Sundew</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <drawSize>1.6</drawSize>
+      <shadowData>
+        <volume>(0.55, 0.2, 0.2)</volume>
+      </shadowData>
+    </graphicData>
+    <!-- <uiIconScale>0.85</uiIconScale> -->
+    <plant>
+      <growDays>6</growDays>
+      <!-- <leaflessGraphicPath>Things/Plant/Bush_Leafless</leaflessGraphicPath> -->
+    </plant>
+  </ThingDef>
+  
+  
+</Defs>
