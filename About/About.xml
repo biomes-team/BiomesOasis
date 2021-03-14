@@ -17,7 +17,6 @@
         <packageId>BiomesTeam.BiomesCore</packageId>
         <displayName>Biomes! Core</displayName>
         <steamWorkshopUrl>steam://url/CommunityFilePage/2038000893</steamWorkshopUrl>
-
     </li>
 </modDependencies>
   <loadAfter>
@@ -27,7 +26,7 @@
     <li>BiomesTeam.BiomesCore</li>
   </loadAfter>
   <description>
-A few extra islands based on vanilla biomes. Nothing else.
+Adds oases.
   </description>
   	
 </ModMetaData>

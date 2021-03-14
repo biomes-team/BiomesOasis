@@ -2,17 +2,17 @@
 <Defs>
   
   <BiomeDef>    <!-- oasis. basically an island. -->
-    <defName>BiomesIslands_Oasis</defName>
-    <label>oasis</label>
-    <description>A patch of jungle around a lake in the middle of a desert. If a camel is the ship of the desert, is an oasis not just the island of the desert?</description>
+    <defName>BMT_ChromaticOasis</defName>
+    <label>chromatic oasis</label>
+    <description>A colorful patch of jungle around a lake in the middle of a desert. If a camel is the ship of the desert, is an oasis not just the island of the desert?</description>
     <workerClass>BiomesKit.UniversalBiomeWorker</workerClass>
 	
 	<modExtensions>
         <li Class="BiomesCore.DefModExtensions.BiomesMap">
-			<minHillEncroachment>0</minHillEncroachment>
-			<maxHillEncroachment>0</maxHillEncroachment>
-            <minHillEdgeMultiplier>0</minHillEdgeMultiplier>
-            <maxHillEdgeMultiplier>0</maxHillEdgeMultiplier>
+			<!-- <minHillEncroachment>0</minHillEncroachment> -->
+			<!-- <maxHillEncroachment>0</maxHillEncroachment> -->
+            <!-- <minHillEdgeMultiplier>0</minHillEdgeMultiplier> -->
+            <!-- <maxHillEdgeMultiplier>0</maxHillEdgeMultiplier> -->
 			<isOasis>true</isOasis>
 		</li>
         <li Class="BiomesKit.BiomesKitControls">
@@ -90,26 +90,26 @@
 	  <li>
         <terrain>Sand</terrain>
         <min>-999</min>
-        <max>4</max>
+        <max>3</max>
       </li>
 	  <li>
         <terrain>Soil</terrain>
-        <min>4</min>
-        <max>5</max>
+        <min>3</min>
+        <max>4</max>
       </li>
 	  <li>
         <terrain>SoilRich</terrain>
-        <min>5</min>
+        <min>4</min>
         <max>8</max>
       </li>
 	  <li>
         <terrain>WaterShallow</terrain>
         <min>8</min>
-        <max>15</max>
+        <max>18</max>
       </li>
 	  <li>
         <terrain>WaterDeep</terrain>
-        <min>15</min>
+        <min>18</min>
         <max>999</max>
       </li>
 	</terrainsByFertility>

@@ -4,4 +4,3 @@ C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\BiomesOasis\Source\B
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\BiomesOasis\Source\BiomesOasis\obj\Debug\BiomesOasis.dll
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\BiomesOasis\Source\BiomesOasis\obj\Debug\BiomesOasis.pdb
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\BiomesOasis\Source\BiomesOasis\obj\Debug\BiomesOasis.csprojAssemblyReference.cache
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\BiomesOasis\Source\BiomesOasis\obj\Debug\BiomesOasis.csproj.CopyComplete
