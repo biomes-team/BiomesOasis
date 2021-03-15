@@ -3,8 +3,8 @@
   
   <ThingDef ParentName="BushBase">
     <defName>BMT_SundewPlant</defName>
-    <label>bush</label>
-    <description>A short shrub. Does not typically talk.</description>
+    <label>sundew</label>
+    <description>Sundew. TODO: Description</description>
     <altitudeLayer>Building</altitudeLayer>
     <graphicData>
       <texPath>BMT_Oasis/Plant/Sundew</texPath>
@@ -22,4 +22,35 @@
   </ThingDef>
   
   
+  <ThingDef ParentName="PlantBase">
+    <defName>BMT_Caladium</defName>
+    <label>caladium</label>
+    <description>A decorative plant with broad leaves.</description>
+    <statBases>
+      <Beauty>8</Beauty>
+      <Nutrition>0.1</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>BMT_Oasis/Plant/Caladium</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <uiIconScale>2.0</uiIconScale>
+    <altitudeLayer>Item</altitudeLayer>
+    <selectable>true</selectable>
+    <plant>
+      <dieIfLeafless>true</dieIfLeafless>
+      <sowWork>440</sowWork> 
+      <sowTags>
+        <li>Ground</li>
+        <li>Decorative</li>
+      </sowTags>
+      <growMinGlow>0.3</growMinGlow>
+      <topWindExposure>0.1</topWindExposure>
+      <growDays>5</growDays>
+      <visualSizeRange>0.8~1.6</visualSizeRange>
+      <wildOrder>1</wildOrder>
+      <purpose>Beauty</purpose>
+    </plant>
+  </ThingDef>
+
 </Defs>

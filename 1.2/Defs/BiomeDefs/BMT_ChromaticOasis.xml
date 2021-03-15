@@ -126,6 +126,7 @@
     </baseWeatherCommonalities>
 	<wildPlants>
 		<BMT_SundewPlant>1.0</BMT_SundewPlant>
+		<BMT_Caladium>0.5</BMT_Caladium>
 
 		<Plant_Grass>3.0</Plant_Grass>
 		<Plant_TallGrass>2.0</Plant_TallGrass>
