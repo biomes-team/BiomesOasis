@@ -6,9 +6,8 @@
     <label>Sunsnake</label>
     <description>Sunsnake. TODO: Description</description>
     <statBases>
-      <MoveSpeed>4.8</MoveSpeed>
-      <!-- <SwimSpeed>8</SwimSpeed> -->
-      <MarketValue>360</MarketValue>
+      <MoveSpeed>4.3</MoveSpeed>
+      <MarketValue>280</MarketValue>
       <ComfyTemperatureMin>0</ComfyTemperatureMin>
       <ComfyTemperatureMax>60</ComfyTemperatureMax>
     </statBases>
@@ -48,23 +47,20 @@
         <eggFertilizationCountMax>1</eggFertilizationCountMax>
         <eggLayIntervalDays>18.0</eggLayIntervalDays>
         <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
-        <eggCountRange>
-          <min>1</min>
-          <max>1</max>
-        </eggCountRange>
+        <eggCountRange>1~1</eggCountRange>
       </li>
     </comps>
     <race>
       <body>Snake</body>
       <predator>true</predator>
-      <maxPreyBodySize>2</maxPreyBodySize>
-      <baseHungerRate>0.25</baseHungerRate>
-      <baseBodySize>1.75</baseBodySize>
-      <baseHealthScale>2.0</baseHealthScale>
+      <maxPreyBodySize>1.0</maxPreyBodySize>
+      <baseHungerRate>0.15</baseHungerRate>
+      <baseBodySize>0.65</baseBodySize>
+      <baseHealthScale>0.8</baseHealthScale>
       <foodType>CarnivoreAnimal</foodType>
       <leatherDef>Leather_Lizard</leatherDef>
       <wildness>0.80</wildness>
-      <manhunterOnTameFailChance>0.25</manhunterOnTameFailChance>
+      <manhunterOnTameFailChance>0.35</manhunterOnTameFailChance>
       <manhunterOnDamageChance>0.35</manhunterOnDamageChance>
       <nameOnTameChance>1</nameOnTameChance>
       <lifeExpectancy>20</lifeExpectancy>
@@ -75,11 +71,11 @@
         </li>
         <li>
           <def>AnimalJuvenile</def>
-          <minAge>0.35</minAge>
+          <minAge>0.2</minAge>
         </li>
         <li>
           <def>AnimalAdult</def>
-          <minAge>0.8</minAge>
+          <minAge>0.5</minAge>
           <soundWounded>Pawn_Cobra_Wounded</soundWounded>
           <soundDeath>Pawn_Cobra_Death</soundDeath>
           <soundCall>Pawn_Cobra_Call</soundCall>
@@ -100,17 +96,17 @@
     <defName>BMT_Sunsnake</defName>
     <label>Sunsnake</label>
     <race>BMT_Sunsnake</race>
-    <combatPower>125</combatPower>
-    <ecoSystemWeight>0.5</ecoSystemWeight>
+    <combatPower>65</combatPower>
+    <ecoSystemWeight>0.35</ecoSystemWeight>
     <lifeStages>
       <li>
         <bodyGraphicData>
           <texPath>BMT_Oasis/Animal/Sunsnake/Sunsnake</texPath>
-          <drawSize>1.2</drawSize>
+          <drawSize>1.0</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>BMT_Oasis/Animal/Sunsnake/Sunsnake</texPath>
-          <drawSize>1.2</drawSize>
+          <texPath>Things/Pawn/Animal/Cobra/Dessicated_Cobra</texPath>
+          <drawSize>1.0</drawSize>
           <shadowData>
             <volume>(0.25, 0.25, 0.25)</volume>
             <offset>(0,0,0)</offset>
@@ -120,11 +116,11 @@
       <li>
         <bodyGraphicData>
           <texPath>BMT_Oasis/Animal/Sunsnake/Sunsnake</texPath>
-          <drawSize>1.8</drawSize>
+          <drawSize>1.5</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>BMT_Oasis/Animal/Sunsnake/Sunsnake</texPath>
-          <drawSize>1.8</drawSize>
+          <texPath>Things/Pawn/Animal/Cobra/Dessicated_Cobra</texPath>
+          <drawSize>1.5</drawSize>
           <shadowData>
             <volume>(0.35, 0.35, 0.35)</volume>
             <offset>(0,0,0)</offset>
@@ -134,11 +130,11 @@
       <li>
         <bodyGraphicData>
           <texPath>BMT_Oasis/Animal/Sunsnake/Sunsnake</texPath>
-          <drawSize>2.4</drawSize>
+          <drawSize>2.0</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>BMT_Oasis/Animal/Sunsnake/Sunsnake</texPath>
-          <drawSize>2.4</drawSize>
+          <texPath>Things/Pawn/Animal/Cobra/Dessicated_Cobra</texPath>
+          <drawSize>2.0</drawSize>
           <shadowData>
             <volume>(0.45, 0.45, 0.45)</volume>
             <offset>(0,0,0)</offset>

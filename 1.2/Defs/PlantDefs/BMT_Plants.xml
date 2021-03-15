@@ -9,13 +9,15 @@
     <graphicData>
       <texPath>BMT_Oasis/Plant/Sundew</texPath>
       <graphicClass>Graphic_Random</graphicClass>
-      <drawSize>1.6</drawSize>
+      <!-- <drawSize>1.6</drawSize> -->
       <shadowData>
         <volume>(0.55, 0.2, 0.2)</volume>
+        <offset>(0,0,-0.42)</offset>
       </shadowData>
     </graphicData>
     <plant>
       <growDays>6</growDays>
+      <visualSizeRange>1.0~1.6</visualSizeRange>
     </plant>
   </ThingDef>
   
