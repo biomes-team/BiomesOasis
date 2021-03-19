@@ -53,4 +53,43 @@
     </plant>
   </ThingDef>
 
+
+
+<ThingDef ParentName="PlantBase">
+	<defName>BMT_Lilypad</defName>
+    <label>lilypad</label>
+    <description>TODO: Description</description>
+    <graphicData>
+		<graphicClass>Graphic_Random</graphicClass>
+		<texPath>BMT_Oasis/Plant/Lilypad</texPath>
+    </graphicData>
+    <statBases>
+      <Beauty>3</Beauty>
+      <Nutrition>0.1</Nutrition>
+    </statBases>
+    <modExtensions>
+        <li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
+            <allowInFreshWater>true</allowInFreshWater>
+            <allowInSaltWater>false</allowInSaltWater>
+            <allowInShallowWater>true</allowInShallowWater>
+            <allowInDeepWater>true</allowInDeepWater>
+            <allowOnLand>false</allowOnLand>
+        </li>
+    </modExtensions>
+    <hideAtSnowDepth>0.5</hideAtSnowDepth>
+    <selectable>true</selectable>
+    <plant>
+		<fertilityMin>0.1</fertilityMin>
+		<fertilitySensitivity>0.8</fertilitySensitivity>
+		<growDays>3</growDays>
+		<visualSizeRange>0.7~1.1</visualSizeRange>
+		<topWindExposure>0.0</topWindExposure>
+		<wildClusterRadius>8</wildClusterRadius>
+		<wildClusterWeight>50</wildClusterWeight>
+		<wildOrder>1</wildOrder>
+        <wildEqualLocalDistribution>false</wildEqualLocalDistribution>
+    </plant>
+  </ThingDef>
+
+
 </Defs>
