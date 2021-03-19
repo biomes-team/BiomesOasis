@@ -34,7 +34,7 @@
       <texPath>BMT_Oasis/Plant/Caladium</texPath>
       <graphicClass>Graphic_Random</graphicClass>
     </graphicData>
-    <uiIconScale>2.0</uiIconScale>
+    <!-- <uiIconScale>2.0</uiIconScale> -->
     <altitudeLayer>Item</altitudeLayer>
     <selectable>true</selectable>
     <plant>
@@ -47,7 +47,7 @@
       <growMinGlow>0.3</growMinGlow>
       <topWindExposure>0.1</topWindExposure>
       <growDays>5</growDays>
-      <visualSizeRange>0.8~1.6</visualSizeRange>
+      <visualSizeRange>0.7~1.4</visualSizeRange>
       <wildOrder>1</wildOrder>
       <purpose>Beauty</purpose>
     </plant>
