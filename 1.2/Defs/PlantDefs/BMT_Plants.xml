@@ -2,7 +2,7 @@
 <Defs>
   
   <ThingDef ParentName="BushBase">
-    <defName>BMT_SundewPlant</defName>
+    <defName>BMT_Sundew</defName>
     <label>sundew</label>
     <description>Sundew. TODO: Description</description>
     <altitudeLayer>Building</altitudeLayer>
