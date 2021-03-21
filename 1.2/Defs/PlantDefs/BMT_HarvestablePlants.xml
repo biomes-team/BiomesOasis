@@ -14,7 +14,7 @@
 	</statBases>
 	<graphicData>
 		<graphicClass>Graphic_Random</graphicClass>
-		<texPath>BMT_Oasis/Plant/Aquamelon</texPath>
+		<texPath>BMT_Oasis/Plant/Aquamelon/Aquamelon_Mature</texPath>
 		<shadowData>
 			<volume>(0.55, 0.2, 0.2)</volume>
 			<offset>(0,0,-0.25)</offset>
@@ -29,6 +29,7 @@
 		<fertilitySensitivity>0.5</fertilitySensitivity>
 		<growDays>6</growDays>
 		<!-- <leaflessGraphicPath>Things/Plant/BerryPlant_Leafless</leaflessGraphicPath> -->
+		<immatureGraphicPath>BMT_Oasis/Plant/Aquamelon/Aquamelon_Immature</immatureGraphicPath>
 		<harvestYield>8</harvestYield>
 		<harvestWork>250</harvestWork>
 		<harvestTag>Standard</harvestTag>
