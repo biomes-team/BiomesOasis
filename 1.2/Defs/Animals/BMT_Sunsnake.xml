@@ -3,8 +3,8 @@
 
  <ThingDef ParentName="AnimalThingBase">
     <defName>BMT_Sunsnake</defName>
-    <label>Sunsnake</label>
-    <description>Sunsnake. TODO: Description</description>
+    <label>sunsnake</label>
+    <description>sunsnake. TODO: Description</description>
     <statBases>
       <MoveSpeed>4.3</MoveSpeed>
       <MarketValue>280</MarketValue>

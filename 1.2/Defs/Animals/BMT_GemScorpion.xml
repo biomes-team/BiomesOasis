@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  <ThingDef ParentName="BaseInsect">
+    <defName>BMT_GemScorpion</defName>
+    <label>gem scorpion</label>
+    <description>This scorpion is found in many colors. Its stinger is toxic.</description>
+    <statBases>
+      <MoveSpeed>3.75</MoveSpeed>
+      <ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.15</ArmorRating_Sharp>
+      <ComfyTemperatureMin>-10</ComfyTemperatureMin>
+      <MarketValue>200</MarketValue>
+      <LeatherAmount>0</LeatherAmount>
+      <ToxicSensitivity>0.8</ToxicSensitivity>
+    </statBases>
+    <uiIconScale>2</uiIconScale>
+    <tools>
+	 <li>
+        <label>left claw</label>
+        <capacities>
+          <li>Cut</li>
+          <li>Poke</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>2.6</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftClaws</linkedBodyPartsGroup>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+	 <li>
+        <label>right claw</label>
+        <capacities>
+          <li>Cut</li>
+          <li>Poke</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>2.6</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightClaws</linkedBodyPartsGroup>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+      <li>
+        <label>stinger</label>
+        <capacities>
+          <li>BMT_ToxicSting</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>BMT_StingerGroup</linkedBodyPartsGroup>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.1</chanceFactor>
+      </li>
+
+    </tools>
+    <race>
+      <body>BMT_Scorpion</body>
+      <predator>true</predator>
+      <foodType>OmnivoreAnimal, OvivoreAnimal</foodType>
+      <baseBodySize>0.2</baseBodySize>
+      <baseHungerRate>0.10</baseHungerRate>
+      <baseHealthScale>0.4</baseHealthScale>
+      <useMeatFrom>Megaspider</useMeatFrom>
+      <wildness>0.95</wildness>
+      <trainability>Simple</trainability>
+      <lifeExpectancy>6</lifeExpectancy>
+      <lifeStageAges>
+        <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>0.08</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0.25</minAge>
+          <soundWounded>Pawn_Megascarab_Wounded</soundWounded>
+          <soundDeath>Pawn_Megascarab_Death</soundDeath>
+          <soundCall>Pawn_Megascarab_Call</soundCall>
+          <soundAngry>Pawn_Megascarab_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+    </race>
+    <comps>
+      <li Class="CompProperties_EggLayer">
+        <eggFertilizedDef>BMT_EggGemScorpionFertilized</eggFertilizedDef>
+        <eggFertilizationCountMax>1</eggFertilizationCountMax>
+        <eggLayIntervalDays>14.0</eggLayIntervalDays>
+        <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+        <eggCountRange>1~2</eggCountRange>
+      </li>
+    </comps>
+	<tradeTags>
+      <li>AnimalInsect</li>
+    </tradeTags>
+  </ThingDef>
+  
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>BMT_GemScorpion</defName>
+    <label>gem scorpion</label>
+    <race>BMT_GemScorpion</race>
+    <combatPower>40</combatPower>
+    <canArriveManhunter>false</canArriveManhunter>
+    <ecoSystemWeight>0.15</ecoSystemWeight>
+    <alternateGraphicChance>0.99</alternateGraphicChance>
+    <alternateGraphics>
+		<!-- yellow -->
+		<li><color>(225,174,69)</color></li>
+
+		<!-- pink -->
+		<li><color>(143,48,116)</color></li>
+
+		<!-- dark blue -->
+		<li><color>(51,24,129)</color></li>
+
+		<!-- red -->
+		<li><color>(136,36,44)</color></li>
+
+		<!-- plum -->
+		<li><color>(72,20,58)</color></li>
+		
+		<!-- green -->
+		<li><color>(40,102,0)</color></li>
+		
+	<!-- light green -->
+		<li><color>(162,177,48)</color></li>
+
+
+	</alternateGraphics>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>BMT_Oasis/Animal/GemScorpion/GemScorpion</texPath>
+          <drawSize>0.7</drawSize>
+          <color>(30,30,30)</color>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>BMT_Oasis/Animal/GemScorpion/GemScorpion_east</texPath>
+          <drawSize>0.7</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>BMT_Oasis/Animal/GemScorpion/GemScorpion</texPath>
+          <drawSize>1.0</drawSize>
+          <color>(30,30,30)</color>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>BMT_Oasis/Animal/GemScorpion/GemScorpion_east</texPath>
+          <drawSize>1.0</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>BMT_Oasis/Animal/GemScorpion/GemScorpion</texPath>
+          <drawSize>1.2</drawSize>
+          <color>(30,30,30)</color>
+          <shadowData>
+            <volume>(0.2, 0.3, 0.2)</volume>
+            <offset>(0,0,0)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>BMT_Oasis/Animal/GemScorpion/GemScorpion_east</texPath>
+          <drawSize>1.2</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+  
+  
+  <ThingDef ParentName="EggFertBase">
+	<defName>BMT_EggGemScorpionFertilized</defName>
+	<label>gem scorpion egg (fert.)</label>
+	<description>A fertilized gem scorpion egg. If all goes well, it should hatch into a baby gem scorpion. It can be eaten raw, but it's much better cooked.</description>
+	<graphicData>
+		<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
+		<color>(149,148,173)</color>
+		<drawSize>0.6</drawSize>
+	</graphicData>
+	<statBases>
+		<MarketValue>20.0</MarketValue>
+	</statBases>
+	<comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>4.5</hatcherDaystoHatch>
+        <hatcherPawn>BMT_GemScorpion</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+
+
+
+  </Defs>
+

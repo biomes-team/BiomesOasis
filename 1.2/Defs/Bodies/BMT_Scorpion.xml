@@ -4,8 +4,8 @@
  <Defs>
  
     <BodyDef>
-        <defName>BMT_GiantSpider</defName>
-        <label>giant spider</label>
+        <defName>BMT_Scorpion</defName>
+        <label>scorpion</label>
         <corePart>
             <def>Shell</def>
             <height>Middle</height>
@@ -79,14 +79,21 @@
                             </parts>
                         </li>
                         <li>
-                            <def>BMT_LeftPedipalp</def>
-                            <coverage>0.02</coverage>
+                            <def>FrontClaw</def>
+                            <customLabel>front left claw</customLabel>
+                            <coverage>0.09</coverage>
                             <height>Bottom</height>
+							<groups>
+								<li>FrontLeftClaws</li>
+                            </groups>
                         </li>
                         <li>
-                            <def>BMT_RightPedipalp</def>
-                            <coverage>0.02</coverage>
-                            <height>Bottom</height>
+                            <def>FrontClaw</def>
+                            <customLabel>front right claw</customLabel>
+                            <coverage>0.09</coverage>
+							<groups>
+								<li>FrontRightClaws</li>
+                            </groups>
                         </li>
                         <li>
                             <def>InsectLeg</def>
@@ -118,19 +125,7 @@
                             <coverage>0.06</coverage>
                             <height>Bottom</height>
                         </li>
-                        <li>
-                            <def>InsectLeg</def>
-                            <customLabel>second middle left leg</customLabel>
-                            <coverage>0.06</coverage>
-                            <height>Bottom</height>
-                        </li>
-                        <li>
-                            <def>InsectLeg</def>
-                            <customLabel>second middle right leg</customLabel>
-                            <coverage>0.06</coverage>
-                            <height>Bottom</height>
-                        </li>
-                        <li>
+						<li>
                             <def>InsectLeg</def>
                             <customLabel>rear left leg</customLabel>
                             <coverage>0.06</coverage>
@@ -174,70 +169,7 @@
         </corePart>
     </BodyDef>
 	
-	<!-- =============================== Body parts ===============================  -->
-	
-	
-	
-	<BodyPartGroupDef>
-        <defName>BMT_StingerGroup</defName>
-        <label>stinger</label>
-        <listOrder>233</listOrder>
-    </BodyPartGroupDef>
 
-    <BodyPartDef>
-        <defName>BMT_Stinger</defName>
-        <label>stinger</label>
-        <hitPoints>15</hitPoints>
-        <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
-        <skinCovered>false</skinCovered>
-    </BodyPartDef>
-
-    <BodyPartDef>
-        <defName>BMT_Cephalothorax</defName>
-        <label>caphalothorax</label>
-        <hitPoints>20</hitPoints>
-        <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
-        <skinCovered>false</skinCovered>
-        <tags>
-            <li>BreathingPathway</li>
-            <li>EatingPathway</li>
-            <li>TalkingPathway</li>
-        </tags>
-    </BodyPartDef>
-
-    <BodyPartDef>
-        <defName>BMT_SpiderAbdomen</defName>
-        <label>abdomen</label>
-        <hitPoints>20</hitPoints>
-        <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
-        <skinCovered>false</skinCovered>
-        <tags>
-            <li>MetabolismSource</li>
-        </tags>
-    </BodyPartDef>
-
-    <BodyPartDef>
-        <defName>BMT_LeftPedipalp</defName>
-        <label>left pedipalp</label>
-        <hitPoints>15</hitPoints>
-        <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
-        <skinCovered>false</skinCovered>
-        <tags>
-            <li>ManipulationLimbCore</li>
-        </tags>
-    </BodyPartDef>
-
-    <BodyPartDef>
-        <defName>BMT_RightPedipalp</defName>
-        <label>right pedipalp</label>
-        <hitPoints>15</hitPoints>
-        <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
-        <skinCovered>false</skinCovered>
-        <tags>
-            <li>ManipulationLimbCore</li>
-        </tags>
-    </BodyPartDef>
-	
 	
 	
 </Defs>

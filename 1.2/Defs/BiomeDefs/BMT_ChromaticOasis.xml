@@ -37,7 +37,7 @@
     <movementDifficulty>2</movementDifficulty>
     <texture>World/Biomes/desert</texture>
     <forageability>1</forageability>
-		<foragedFood>RawBerries</foragedFood>
+	<foragedFood>RawBerries</foragedFood>
     <wildPlantRegrowDays>15</wildPlantRegrowDays>
     <soundsAmbient>
       <li>Ambient_NightInsects_Standard</li>
@@ -170,6 +170,7 @@
 		
 <!-- Predators -->
 		<BMT_Sunsnake>0.07</BMT_Sunsnake> 
+		<BMT_GemScorpion>0.07</BMT_GemScorpion>
 		<!-- <BMT_ChromaticCroc>0.07</BMT_ChromaticCroc> -->
 		
     </wildAnimals> 
