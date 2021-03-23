@@ -97,7 +97,7 @@
           <drawSize>0.8</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Megaspider/Dessicated_Megaspider</texPath>
+          <texPath>BMT_Oasis/Animal/Tarimtula/Tarimtula_dessicated</texPath>
           <drawSize>0.8</drawSize>
         </dessicatedBodyGraphicData>
       </li>
@@ -107,7 +107,7 @@
           <drawSize>1.4</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Megaspider/Dessicated_Megaspider</texPath>
+          <texPath>BMT_Oasis/Animal/Tarimtula/Tarimtula_dessicated</texPath>
           <drawSize>1.4</drawSize>
         </dessicatedBodyGraphicData>
       </li>
@@ -121,7 +121,7 @@
           </shadowData>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Megaspider/Dessicated_Megaspider</texPath>
+          <texPath>BMT_Oasis/Animal/Tarimtula/Tarimtula_dessicated</texPath>
           <drawSize>2.5</drawSize>
         </dessicatedBodyGraphicData>
       </li>
@@ -135,7 +135,9 @@
 	<label>tarimtula egg sac (fert.)</label>
 	<description>A tarimtula egg sac. If all goes well, it should hatch into several baby tarimtulas. It can be eaten raw, but it's much better cooked.</description>
 	<graphicData>
-		<color>(45,140,70)</color>
+		<graphicClass>Graphic_Single</graphicClass>
+        <texPath>BMT_Oasis/Animal/Tarimtula/SpiderEggsac</texPath>
+		<color>(125,140,90)</color>
 		<drawSize>1.2</drawSize>
 	</graphicData>
     <stackLimit>1</stackLimit>
@@ -145,7 +147,7 @@
 	<comps>
       <li Class="BiomesOasis.CompProperties_MultiHatcher">
         <hatcherDaystoHatch>13</hatcherDaystoHatch>
-		<numToHatch>5~7</numToHatch>
+		<numToHatch>7~13</numToHatch>
         <hatcherPawn>BMT_Tarimtula</hatcherPawn>
       </li>
     </comps>
