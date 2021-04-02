@@ -143,7 +143,7 @@
 		
 	<!-- trees -->
 		<Plant_TreeCecropia>0.3</Plant_TreeCecropia>
-		<Plant_TreePalm>0.3</Plant_TreePalm>
+		<BMT_PrismPalm>0.3</BMT_PrismPalm>
 		<Plant_SaguaroCactus>0.2</Plant_SaguaroCactus>
 	
 	<!-- aquatic -->
