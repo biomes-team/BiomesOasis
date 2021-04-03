@@ -113,6 +113,7 @@
       <harvestYield>18</harvestYield>
       <wildClusterRadius>10</wildClusterRadius>
       <wildClusterWeight>11</wildClusterWeight>
+      <visualSizeRange>1.5~2.2</visualSizeRange>
     </plant>
     <ingestible />
   </ThingDef>
