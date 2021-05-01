@@ -112,8 +112,8 @@
 
 
 <ThingDef ParentName="PlantBase">
-    <defName>BMT_GradientFlower</defName>
-    <label>gradient flower</label>
+    <defName>BMT_Anemone</defName>
+    <label>anemone</label>
     <description>A small, brightly colored flower</description>
     <statBases>
       <MaxHitPoints>85</MaxHitPoints>
@@ -121,7 +121,7 @@
       <Nutrition>0.2</Nutrition>
     </statBases>
     <graphicData>
-      <texPath>BMT_Oasis/Plant/GradientFlower</texPath>
+      <texPath>BMT_Oasis/Plant/Anemone</texPath>
       <graphicClass>Graphic_Random</graphicClass>
     </graphicData>
     <hideAtSnowDepth>0.5</hideAtSnowDepth>
