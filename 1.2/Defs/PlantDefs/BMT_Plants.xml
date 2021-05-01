@@ -91,31 +91,53 @@
     </plant>
   </ThingDef>
 
-  <ThingDef ParentName="TreeBase">
-    <defName>BMT_PrismPalm</defName>
-    <label>prism palm tree</label>
-    <description>A colorful tree with a tall, naked trunk topped by a cluster of very broad leaves. Unfortunately, this variety doesn't produce any edible coconuts.</description>
+
+
+  <ThingDef ParentName="BushBase">
+    <defName>BMT_PalmBush</defName>
+    <label>palm bush</label>
+    <description>A short shrub with broad leaves.</description>
     <graphicData>
-      <texPath>BMT_Oasis/Plant/PrismPalm</texPath>
-      <graphicClass>Graphic_Random</graphicClass>
+      <texPath>BMT_Oasis/Plant/PalmBush</texPath>
+      <drawSize>2.4</drawSize>
       <shadowData>
-        <volume>(0.18, 0.3, 0.15)</volume>
-            <offset>(0.03,0,-0.44)</offset>
+        <volume>(0.55, 0.2, 0.2)</volume>
       </shadowData>
     </graphicData>
-    <statBases>
-      <Beauty>1</Beauty>
-      <Nutrition>1.2</Nutrition>
-    </statBases>
     <plant>
-      <growDays>14</growDays>
-      <harvestWork>600</harvestWork>
-      <harvestYield>18</harvestYield>
-      <wildClusterRadius>10</wildClusterRadius>
-      <wildClusterWeight>11</wildClusterWeight>
-      <visualSizeRange>1.5~2.2</visualSizeRange>
+      <growDays>3</growDays>
+      <!-- <leaflessGraphicPath>Things/Plant/Bush_Leafless</leaflessGraphicPath> -->
     </plant>
+  </ThingDef>
+
+
+<ThingDef ParentName="PlantBase">
+    <defName>BMT_GradientFlower</defName>
+    <label>gradient flower</label>
+    <description>A small, brightly colored flower</description>
+    <statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+      <Beauty>5</Beauty>
+      <Nutrition>0.2</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>BMT_Oasis/Plant/GradientFlower</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <hideAtSnowDepth>0.5</hideAtSnowDepth>
     <ingestible />
+    <plant>
+      <fertilitySensitivity>0.0</fertilitySensitivity>
+      <growDays>3.2</growDays>
+      <fertilityMin>0.05</fertilityMin>
+      <maxMeshCount>9</maxMeshCount>
+      <visualSizeRange>0.4~0.7</visualSizeRange>
+      <topWindExposure>0.3</topWindExposure>
+      <wildClusterRadius>4</wildClusterRadius>
+      <wildClusterWeight>8</wildClusterWeight>
+      <wildOrder>1</wildOrder>
+      <purpose>Beauty</purpose>
+    </plant>
   </ThingDef>
 
 

@@ -133,6 +133,7 @@
 	
 	<!-- bushes -->
 		<BMT_Sundew>1.0</BMT_Sundew>
+		<BMT_PalmBush>0.3</BMT_PalmBush>
 		<Plant_Alocasia>0.8</Plant_Alocasia>
 		<Plant_PincushionCactus>0.6</Plant_PincushionCactus>
 		<Plant_Bush>0.15</Plant_Bush>
@@ -140,22 +141,21 @@
 	<!-- decorative -->
 		<Plant_Clivia>0.07</Plant_Clivia>
 		<BMT_Caladium>0.5</BMT_Caladium>
+		<BMT_GradientFlower>0.2</BMT_GradientFlower>
 		
 	<!-- trees -->
 		<Plant_TreeCecropia>0.3</Plant_TreeCecropia>
-		<BMT_PrismPalm>0.3</BMT_PrismPalm>
 		<Plant_SaguaroCactus>0.2</Plant_SaguaroCactus>
+		
+	<!-- food -->
+		<BMT_PrismPalm>0.1</BMT_PrismPalm>
+		<BMT_AquamelonPlant>0.07</BMT_AquamelonPlant>
+		<Plant_Berry>0.05</Plant_Berry>
 	
 	<!-- aquatic -->
 		<BMT_Papyrus>0.5</BMT_Papyrus>
 		<BMT_Cattail>0.5</BMT_Cattail>
 		<BMT_Lilypad>0.05</BMT_Lilypad>
-		
-	<!-- food -->
-		<BiomesIslands_CoconutPalm>0.1</BiomesIslands_CoconutPalm>
-		<BMT_AquamelonPlant>0.07</BMT_AquamelonPlant>
-		<Plant_Berry>0.05</Plant_Berry>
-	
 		
 		
     </wildPlants>

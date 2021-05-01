@@ -50,6 +50,28 @@
 </ThingDef>
 
 
+<ThingDef ParentName="BiomesCore_FruitTreeBase">
+		<defName>BMT_PrismPalm</defName>
+		<label>prism palm</label>
+		<description>A colorful tree with a tall, naked trunk topped by a cluster of very broad leaves. This variety produces coconuts.</description>
+		<graphicData>
+		  <texPath>BMT_Oasis/Plant/PrismPalm</texPath>
+		  <graphicClass>Graphic_Random</graphicClass>
+		  <shadowData>
+			<volume>(0.18, 0.3, 0.15)</volume>
+				<offset>(0.03,0,-0.44)</offset>
+		  </shadowData>
+		</graphicData>
+		<plant>
+			<fertilityMin>0.5</fertilityMin>
+			<fertilitySensitivity>0.5</fertilitySensitivity>
+			<growDays>20</growDays>
+			<!-- <immatureGraphicPath>BMT_Oasis/Plant/PrismPalm_Immature</immatureGraphicPath> -->
+			<harvestYield>10</harvestYield>
+			<harvestWork>400</harvestWork>
+			<harvestedThingDef>BiomesIslands_Coconuts</harvestedThingDef>
+		</plant>
+	</ThingDef>
 
 
 
@@ -80,7 +102,7 @@
     </modExtensions>
     <hideAtSnowDepth>0.5</hideAtSnowDepth>
     <selectable>true</selectable>
-    <neverMultiSelect>false</neverMultiSelect>
+    <neverMultiSelect>true</neverMultiSelect>
     <plant>
 		<fertilityMin>0.3</fertilityMin>
 		<fertilitySensitivity>1</fertilitySensitivity>
@@ -120,13 +142,13 @@
     </modExtensions>
     <hideAtSnowDepth>0.5</hideAtSnowDepth>
     <selectable>true</selectable>
-    <neverMultiSelect>false</neverMultiSelect>
+    <neverMultiSelect>true</neverMultiSelect>
     <plant>
 		<fertilityMin>0.3</fertilityMin>
 		<fertilitySensitivity>1</fertilitySensitivity>
 		<growDays>3</growDays>
 		<maxMeshCount>4</maxMeshCount>
-		<visualSizeRange>1.2~2.0</visualSizeRange>
+		<visualSizeRange>0.8~1.6</visualSizeRange>
 		<topWindExposure>0.2</topWindExposure>
 		<wildClusterRadius>8</wildClusterRadius>
 		<wildClusterWeight>50</wildClusterWeight>
