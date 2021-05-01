@@ -150,6 +150,7 @@
 	<!-- food -->
 		<BMT_PrismPalm>0.1</BMT_PrismPalm>
 		<BMT_AquamelonPlant>0.07</BMT_AquamelonPlant>
+		<BMT_DuneDelightPlant>0.07</BMT_DuneDelightPlant>
 		<Plant_Berry>0.05</Plant_Berry>
 	
 	<!-- aquatic -->

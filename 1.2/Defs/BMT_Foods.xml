@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+ 
+<!-- crops -->
+
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>BMT_Aquamelon</defName>
+    <label>aquamelon</label>
+    <description>Aquamelons.</description>
+    <graphicData>
+      <texPath>BMT_Oasis/Item/Aquamelon/Aquamelon</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.2</MarketValue>
+      <Mass>0.027</Mass>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>24</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <ingestible>
+      <preferability>RawTasty</preferability>
+      <tasteThought></tasteThought>
+      <foodType>VegetableOrFruit</foodType>
+    </ingestible>
+  </ThingDef>
+
+
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>BMT_DuneDelight</defName>
+    <label>dune delight</label>
+    <description>Delightful.</description>
+    <graphicData>
+      <texPath>BMT_Oasis/Item/DuneDelight</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>23</MarketValue>
+      <Mass>0.027</Mass>
+      <Nutrition>0.85</Nutrition>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>24</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <ingestible>
+      <preferability>MealFine</preferability>
+      <tasteThought>BMT_AteDuneDelight</tasteThought>
+      <foodType>VegetableOrFruit</foodType>
+    </ingestible>
+  </ThingDef>
+
+
+</Defs>
