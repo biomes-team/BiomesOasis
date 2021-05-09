@@ -146,10 +146,10 @@
 	<!-- trees -->
 		<Plant_TreeCecropia>0.3</Plant_TreeCecropia>
 		<Plant_SaguaroCactus>0.2</Plant_SaguaroCactus>
+		<BMT_PrismPalm>0.3</BMT_PrismPalm>
 		
 	<!-- food -->
-		<BMT_PrismPalm>0.1</BMT_PrismPalm>
-		<BMT_AquamelonPlant>0.07</BMT_AquamelonPlant>
+		<BMT_AquamelonPlant>0.02</BMT_AquamelonPlant>
 		<BMT_DuneDelightPlant>0.07</BMT_DuneDelightPlant>
 		<Plant_Berry>0.05</Plant_Berry>
 	

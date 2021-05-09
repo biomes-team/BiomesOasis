@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="TreeBase">
+		<defName>BMT_PrismPalm</defName>
+		<label>prism palm tree</label>
+		<description>A colorful tree with a tall, naked trunk topped by a cluster of very broad leaves. Unfortunately, this variety doesn't produce any edible coconuts.</description>
+		<graphicData>
+			<texPath>BMT_Oasis/Plant/PrismPalm</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.18, 0.3, 0.15)</volume>
+				<offset>(0.03,0,-0.44)</offset>
+			</shadowData>
+		</graphicData>
+		<statBases>
+			<Beauty>1</Beauty>
+			<Nutrition>1.2</Nutrition>
+		</statBases>
+		<plant>
+			<growDays>14</growDays>
+			<harvestWork>600</harvestWork>
+			<harvestYield>18</harvestYield>
+			<wildClusterRadius>10</wildClusterRadius>
+			<wildClusterWeight>11</wildClusterWeight>
+			<visualSizeRange>1.5~2.2</visualSizeRange>
+		</plant>
+		<ingestible/>
+	</ThingDef>
+</Defs>
