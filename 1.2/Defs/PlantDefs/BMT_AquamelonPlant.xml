@@ -49,42 +49,5 @@
 
 
 
-  <ThingDef ParentName="PlantBase">
-    <defName>BMT_DuneDelightPlant</defName>
-    <label>dune delight</label>
-    <description>A rare plant that produces a particularly delicious fruit. Impossible to cultivate.</description>
-    <statBases>
-      <MaxHitPoints>150</MaxHitPoints>
-      <Nutrition>0.3</Nutrition>
-    </statBases>
-    <graphicData>
-		<texPath>BMT_Oasis/Plant/DuneDelight/DuneDelight</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <selectable>true</selectable>
-	<neverMultiSelect>false</neverMultiSelect>
-    <pathCost>14</pathCost>
-    <ingestible />
-    <plant>
-      <fertilityMin>0.70</fertilityMin>
-      <dieIfLeafless>true</dieIfLeafless>
-      <harvestTag>Standard</harvestTag>
-      <harvestedThingDef>BMT_DuneDelight</harvestedThingDef>
-      <harvestYield>1</harvestYield>
-      <sowTags>
-        <li>Ground</li>
-      </sowTags>
-      <topWindExposure>0.35</topWindExposure>
-      <growDays>8</growDays>
-      <immatureGraphicPath>BMT_Oasis/Plant/DuneDelight/DuneDelight_Immature</immatureGraphicPath>
-      <visualSizeRange>0.5~1.5</visualSizeRange>
-      <wildOrder>2</wildOrder>
-      <purpose>Food</purpose>
-    </plant>
-  </ThingDef>
-
-
-
-
 
 </Defs>
