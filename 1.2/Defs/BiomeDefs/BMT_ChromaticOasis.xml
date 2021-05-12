@@ -125,7 +125,7 @@
       <SnowHard>4</SnowHard>
     </baseWeatherCommonalities>
 	<wildPlants>
-	
+		
 	<!-- ground cover -->
 		<Plant_Grass>3.0</Plant_Grass>
 		<Plant_TallGrass>2.0</Plant_TallGrass>
@@ -157,7 +157,6 @@
 		<BMT_Papyrus>0.5</BMT_Papyrus>
 		<BMT_Cattail>0.5</BMT_Cattail>
 		<BMT_Lilypad>0.05</BMT_Lilypad>
-		
 		
     </wildPlants>
     <wildAnimals>
