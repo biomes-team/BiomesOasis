@@ -119,26 +119,25 @@
     <alternateGraphicChance>0.99</alternateGraphicChance>
     <alternateGraphics>
 		<!-- yellow -->
-		<li><color>(225,174,69)</color></li>
+		<li><color>(233,202,44)</color></li>
 
 		<!-- pink -->
-		<li><color>(143,48,116)</color></li>
-
+		<li><color>(182,53,84)</color></li>
+		
 		<!-- dark blue -->
-		<li><color>(51,24,129)</color></li>
+		<li><color>(38,51,104)</color></li>
 
 		<!-- red -->
-		<li><color>(136,36,44)</color></li>
+		<li><color>(177,27,25)</color></li>
 
 		<!-- plum -->
-		<li><color>(72,20,58)</color></li>
+		<li><color>(89,35,95)</color></li>
 		
-		<!-- green -->
-		<li><color>(40,102,0)</color></li>
+		<!-- teal -->
+		<li><color>(2,103,97)</color></li>
 		
-	<!-- light green -->
-		<li><color>(162,177,48)</color></li>
-
+		<!-- light green -->
+		<li><color>(113,127,42)</color></li>
 
 	</alternateGraphics>
     <lifeStages>
