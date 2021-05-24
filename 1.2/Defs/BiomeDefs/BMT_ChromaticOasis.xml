@@ -31,7 +31,7 @@
     <canAutoChoose>false</canAutoChoose>
     <allowRoads>false</allowRoads>
 	<allowRivers>true</allowRivers>
-    <animalDensity>2.5</animalDensity>
+    <animalDensity>2.2</animalDensity>
     <plantDensity>0.65</plantDensity>
     <settlementSelectionWeight>0.01</settlementSelectionWeight>
     <movementDifficulty>2</movementDifficulty>
@@ -158,6 +158,9 @@
 		<BMT_Papyrus>0.5</BMT_Papyrus>
 		<BMT_Cattail>0.5</BMT_Cattail>
 		<BMT_Lilypad>0.05</BMT_Lilypad>
+		
+	<!-- other -->
+		<Plant_HealrootWild>0.05</Plant_HealrootWild>
 		
     </wildPlants>
     <wildAnimals>
