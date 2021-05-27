@@ -101,6 +101,8 @@
     </alternateGraphics>
     <lifeStages>
       <li>
+        <label>sutekh puppy</label>
+        <labelPlural>sutekh puppies</labelPlural>
         <bodyGraphicData>
           <texPath>BMT_Oasis/Animal/Sutekh/Sutekh</texPath>
           <drawSize>1.1</drawSize>
