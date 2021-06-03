@@ -2,8 +2,8 @@
 <Defs>
 
   <ThingDef ParentName="AnimalThingBase">
-    <defName>BMT_Okapi</defName>
-    <label>okapi</label>
+    <defName>BMT_OrchidOkapi</defName>
+    <label>orchid okapi</label>
     <description>A medium-sized mammal, closely related to giraffes. This one has adapted to a colorful environment by being equally colorful itself.</description>
     <statBases>
       <MoveSpeed>5.3</MoveSpeed>
@@ -97,14 +97,15 @@
   
   
   <PawnKindDef ParentName="AnimalKindBase">
-    <defName>BMT_Okapi</defName>
-    <label>okapi</label>
-    <race>BMT_Okapi</race>
+    <defName>BMT_OrchidOkapi</defName>
+    <label>orchid okapi</label>
+    <race>BMT_OrchidOkapi</race>
     <combatPower>80</combatPower>
     <ecoSystemWeight>1.1</ecoSystemWeight>
     <lifeStages>
       <li>
-        <label>donkey foal</label>
+        <label>orchid okapi calf</label>
+		<labelPlural>orchid okapi calves</labelPlural>
         <bodyGraphicData>
           <texPath>BMT_Oasis/Animal/Okapi/Okapi_Female</texPath>
           <drawSize>1.3</drawSize>
