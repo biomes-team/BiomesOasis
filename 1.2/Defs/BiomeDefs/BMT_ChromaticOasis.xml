@@ -169,12 +169,13 @@
 		<BMT_PalmWarbler>0.5</BMT_PalmWarbler>
 		<Iguana>1.2</Iguana>
 		<BMT_Heron>0.5</BMT_Heron>
-		<Monkey>1</Monkey>
+		<Monkey>0.3</Monkey>
 		<Gazelle>0.5</Gazelle>
 		<BiomesIslands_Flamingo>1.0</BiomesIslands_Flamingo>
 		<BMT_OrchidOkapi>0.4</BMT_OrchidOkapi>
 		<Dromedary>0.7</Dromedary>
 		<BMT_Tarimtula>0.3</BMT_Tarimtula>
+		<BMT_Tamarin>1</BMT_Tamarin>
 		
 <!-- Predators -->
 		<BMT_Sunsnake>0.07</BMT_Sunsnake> 
