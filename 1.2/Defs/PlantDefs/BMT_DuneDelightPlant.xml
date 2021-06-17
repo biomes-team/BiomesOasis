@@ -23,9 +23,6 @@
       <harvestTag>Standard</harvestTag>
       <harvestedThingDef>BMT_DuneDelight</harvestedThingDef>
       <harvestYield>1</harvestYield>
-      <sowTags>
-        <li>Ground</li>
-      </sowTags>
       <topWindExposure>0.35</topWindExposure>
       <growDays>8</growDays>
       <immatureGraphicPath>BMT_Oasis/Plant/DuneDelight/DuneDelight_Immature</immatureGraphicPath>
