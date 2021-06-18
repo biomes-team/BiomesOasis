@@ -40,6 +40,7 @@
       <MarketValue>23</MarketValue>
       <Mass>0.027</Mass>
       <Nutrition>0.85</Nutrition>
+      <FoodPoisonChanceFixedHuman>0</FoodPoisonChanceFixedHuman>
     </statBases>
     <comps>
       <li Class="CompProperties_Rottable">
