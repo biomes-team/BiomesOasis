@@ -58,7 +58,7 @@
 <ThingDef ParentName="PlantBase">
 	<defName>BMT_Lilypad</defName>
     <label>lilypad</label>
-    <description>TODO: Description</description>
+    <description>A flowering water lily.</description>
     <graphicData>
 		<graphicClass>Graphic_Random</graphicClass>
 		<texPath>BMT_Oasis/Plant/Lilypad</texPath>
@@ -84,8 +84,8 @@
 		<growDays>3</growDays>
 		<visualSizeRange>0.7~1.1</visualSizeRange>
 		<topWindExposure>0.0</topWindExposure>
-		<wildClusterRadius>8</wildClusterRadius>
-		<wildClusterWeight>50</wildClusterWeight>
+		<wildClusterRadius>6</wildClusterRadius>
+		<wildClusterWeight>150</wildClusterWeight>
 		<wildOrder>1</wildOrder>
         <wildEqualLocalDistribution>false</wildEqualLocalDistribution>
     </plant>
