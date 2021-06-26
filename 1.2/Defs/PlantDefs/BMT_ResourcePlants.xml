@@ -76,8 +76,8 @@
 		<maxMeshCount>4</maxMeshCount>
 		<visualSizeRange>0.8~1.6</visualSizeRange>
 		<topWindExposure>0.2</topWindExposure>
-		<wildClusterRadius>8</wildClusterRadius>
-		<wildClusterWeight>50</wildClusterWeight>
+		<wildClusterRadius>10</wildClusterRadius>
+		<wildClusterWeight>170</wildClusterWeight>
 		<wildOrder>1</wildOrder>
         <wildEqualLocalDistribution>false</wildEqualLocalDistribution>
     </plant>

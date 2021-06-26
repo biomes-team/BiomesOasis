@@ -155,8 +155,8 @@
 		<Plant_Berry>0.05</Plant_Berry>
 	
 	<!-- aquatic -->
-		<BMT_Papyrus>0.5</BMT_Papyrus>
-		<BMT_Cattail>0.5</BMT_Cattail>
+		<BMT_Papyrus>.3</BMT_Papyrus>
+		<BMT_Cattail>.5</BMT_Cattail>
 		<BMT_Lilypad>0.05</BMT_Lilypad>
 		
 	<!-- other -->
