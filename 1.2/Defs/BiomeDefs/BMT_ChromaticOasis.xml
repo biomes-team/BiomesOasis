@@ -100,11 +100,11 @@
 	  <li>
         <terrain>SoilRich</terrain>
         <min>4</min>
-        <max>8</max>
+        <max>7</max>
       </li>
 	  <li>
         <terrain>WaterShallow</terrain>
-        <min>8</min>
+        <min>7</min>
         <max>18</max>
       </li>
 	  <li>
@@ -127,40 +127,40 @@
 	<wildPlants>
 		
 	<!-- ground cover -->
-		<Plant_Grass>3.0</Plant_Grass>
-		<Plant_TallGrass>2.0</Plant_TallGrass>
-		<Plant_ShrubLow>2.0</Plant_ShrubLow>
+		<Plant_Grass>12.0</Plant_Grass>
+		<Plant_TallGrass>8.0</Plant_TallGrass>
+		<Plant_ShrubLow>8.0</Plant_ShrubLow>
 	
 	<!-- bushes -->
-		<BMT_Sundew>0.3</BMT_Sundew>
-		<BMT_PalmBush>0.3</BMT_PalmBush>
-		<Plant_Alocasia>0.8</Plant_Alocasia>
-		<Plant_PincushionCactus>0.6</Plant_PincushionCactus>
-		<Plant_Bush>0.15</Plant_Bush>
+		<BMT_Sundew>1.2</BMT_Sundew>
+		<BMT_PalmBush>1.2</BMT_PalmBush>
+		<Plant_Alocasia>3.2</Plant_Alocasia>
+		<Plant_PincushionCactus>2.4</Plant_PincushionCactus>
+		<Plant_Bush>0.60</Plant_Bush>
 		
 	<!-- decorative -->
-		<Plant_Clivia>0.07</Plant_Clivia>
-		<BMT_Caladium>0.5</BMT_Caladium>
-		<BMT_Anemone>0.2</BMT_Anemone>
-		<BMT_FloweringCactus>0.1</BMT_FloweringCactus>
+		<Plant_Clivia>0.28</Plant_Clivia>
+		<BMT_Caladium>2</BMT_Caladium>
+		<BMT_Anemone>0.8</BMT_Anemone>
+		<BMT_FloweringCactus>0.2</BMT_FloweringCactus>
 		
 	<!-- trees -->
-		<Plant_TreeCecropia>0.3</Plant_TreeCecropia>
-		<Plant_SaguaroCactus>0.2</Plant_SaguaroCactus>
-		<BMT_PrismPalm>0.3</BMT_PrismPalm>
+		<Plant_TreeCecropia>1.2</Plant_TreeCecropia>
+		<Plant_SaguaroCactus>0.8</Plant_SaguaroCactus>
+		<BMT_PrismPalm>1.2</BMT_PrismPalm>
 		
 	<!-- food -->
-		<BMT_AquamelonPlant>0.02</BMT_AquamelonPlant>
-		<BMT_DuneDelightPlant>0.07</BMT_DuneDelightPlant>
-		<Plant_Berry>0.05</Plant_Berry>
+		<BMT_AquamelonPlant>0.08</BMT_AquamelonPlant>
+		<BMT_DuneDelightPlant>0.28</BMT_DuneDelightPlant>
+		<Plant_Berry>0.20</Plant_Berry>
 	
 	<!-- aquatic -->
-		<BMT_Papyrus>.3</BMT_Papyrus>
-		<BMT_Cattail>.5</BMT_Cattail>
-		<BMT_Lilypad>0.05</BMT_Lilypad>
+		<BMT_Papyrus>0.003</BMT_Papyrus>
+		<BMT_Cattail>0.005</BMT_Cattail>
+		<BMT_Lilypad>0.005</BMT_Lilypad>
 		
 	<!-- other -->
-		<Plant_HealrootWild>0.05</Plant_HealrootWild>
+		<Plant_HealrootWild>0.2</Plant_HealrootWild>
 		
     </wildPlants>
     <wildAnimals>

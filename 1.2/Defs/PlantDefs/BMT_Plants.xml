@@ -85,8 +85,8 @@
 		<visualSizeRange>0.7~1.1</visualSizeRange>
 		<topWindExposure>0.0</topWindExposure>
 		<wildClusterRadius>6</wildClusterRadius>
-		<wildClusterWeight>150</wildClusterWeight>
-		<wildOrder>1</wildOrder>
+		<wildClusterWeight>250</wildClusterWeight>
+		<wildOrder>2</wildOrder>
         <wildEqualLocalDistribution>false</wildEqualLocalDistribution>
     </plant>
   </ThingDef>
