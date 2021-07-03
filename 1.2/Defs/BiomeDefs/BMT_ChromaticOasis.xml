@@ -94,12 +94,12 @@
       </li>
 	  <li>
         <terrain>Soil</terrain>
-        <min>3</min>
-        <max>4</max>
+        <min>2.6</min>
+        <max>3.3</max>
       </li>
 	  <li>
         <terrain>SoilRich</terrain>
-        <min>4</min>
+        <min>3.3</min>
         <max>7</max>
       </li>
 	  <li>
