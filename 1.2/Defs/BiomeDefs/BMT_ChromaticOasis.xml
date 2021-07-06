@@ -90,16 +90,16 @@
 	  <li>
         <terrain>Sand</terrain>
         <min>-999</min>
-        <max>3</max>
+        <max>2.8</max>
       </li>
 	  <li>
         <terrain>Soil</terrain>
-        <min>2.6</min>
-        <max>3.3</max>
+        <min>2.8</min>
+        <max>3.7</max>
       </li>
 	  <li>
         <terrain>SoilRich</terrain>
-        <min>3.3</min>
+        <min>3.7</min>
         <max>7</max>
       </li>
 	  <li>
