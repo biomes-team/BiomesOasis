@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <BiomeDef>    <!-- oasis. basically an island. -->
+    <defName>BMT_ChromaticOasis</defName>
+    <label>chromatic oasis</label>
+    <description>A colorful patch of jungle around a lake in the middle of a desert. If a camel is the ship of the desert, is an oasis not just the island of the desert?</description>
+    <workerClass>BiomesKit.UniversalBiomeWorker</workerClass>
+	
+	<modExtensions>
+        <li Class="BiomesCore.DefModExtensions.BiomesMap">
+			<!-- <minHillEncroachment>0</minHillEncroachment> -->
+			<!-- <maxHillEncroachment>0</maxHillEncroachment> -->
+            <!-- <minHillEdgeMultiplier>0</minHillEdgeMultiplier> -->
+            <!-- <maxHillEdgeMultiplier>0</maxHillEdgeMultiplier> -->
+			<isOasis>true</isOasis>
+		</li>
+        <li Class="BiomesKit.BiomesKitControls">
+			<minimumLandNeighbors>6</minimumLandNeighbors>
+            <allowOnLand>true</allowOnLand>
+			<maxHilliness>Flat</maxHilliness>
+			<spawnOnBiomes>
+				<li>Desert</li>
+				<li>ExtremeDesert</li>
+			</spawnOnBiomes>
+			<frequency>5</frequency>
+			<materialPath>BMT_Oasis/World/MapGraphics/Oasis</materialPath>
+        </li>
+	</modExtensions>
+	
+    <canAutoChoose>false</canAutoChoose>
+    <allowRoads>false</allowRoads>
+	<allowRivers>true</allowRivers>
+    <animalDensity>2.2</animalDensity>
+    <plantDensity>0.65</plantDensity>
+    <settlementSelectionWeight>0.01</settlementSelectionWeight>
+    <movementDifficulty>2</movementDifficulty>
+    <texture>World/Biomes/desert</texture>
+    <forageability>1</forageability>
+	<foragedFood>RawBerries</foragedFood>
+    <wildPlantRegrowDays>15</wildPlantRegrowDays>
+    <soundsAmbient>
+      <li>Ambient_NightInsects_Standard</li>
+    </soundsAmbient>
+    <diseaseMtbDays>35</diseaseMtbDays>
+    <diseases>
+      <li>
+        <diseaseInc>Disease_Malaria</diseaseInc>
+        <commonality>160</commonality>
+      </li>
+      <li>
+        <diseaseInc>Disease_SleepingSickness</diseaseInc>
+        <commonality>140</commonality>
+      </li>
+      <li>
+        <diseaseInc>Disease_Flu</diseaseInc>
+        <commonality>100</commonality>
+      </li>
+      <li>
+        <diseaseInc>Disease_Plague</diseaseInc>
+        <commonality>100</commonality>
+      </li>
+      <li>
+        <diseaseInc>Disease_GutWorms</diseaseInc>
+        <commonality>80</commonality>
+      </li>
+      <li>
+        <diseaseInc>Disease_MuscleParasites</diseaseInc>
+        <commonality>80</commonality>
+      </li>
+      <li>
+        <diseaseInc>Disease_FibrousMechanites</diseaseInc>
+        <commonality>30</commonality>
+      </li>
+      <li>
+        <diseaseInc>Disease_SensoryMechanites</diseaseInc>
+        <commonality>30</commonality>
+      </li>
+      
+      <li>
+        <diseaseInc>Disease_AnimalFlu</diseaseInc>
+        <commonality>100</commonality>
+      </li>
+      <li>
+        <diseaseInc>Disease_AnimalPlague</diseaseInc>
+        <commonality>100</commonality>
+      </li>
+    </diseases>
+	<terrainsByFertility>
+	  <li>
+        <terrain>Sand</terrain>
+        <min>-999</min>
+        <max>2.8</max>
+      </li>
+	  <li>
+        <terrain>Soil</terrain>
+        <min>2.8</min>
+        <max>3.7</max>
+      </li>
+	  <li>
+        <terrain>SoilRich</terrain>
+        <min>3.7</min>
+        <max>7</max>
+      </li>
+	  <li>
+        <terrain>WaterShallow</terrain>
+        <min>7</min>
+        <max>18</max>
+      </li>
+	  <li>
+        <terrain>WaterDeep</terrain>
+        <min>18</min>
+        <max>999</max>
+      </li>
+	</terrainsByFertility>
+	
+    <baseWeatherCommonalities>
+      <Clear>18</Clear>
+      <Fog>1</Fog>
+      <Rain>2</Rain>
+      <DryThunderstorm>0.3</DryThunderstorm>
+      <RainyThunderstorm>1.7</RainyThunderstorm>
+      <FoggyRain>1</FoggyRain>
+      <SnowGentle>4</SnowGentle>
+      <SnowHard>4</SnowHard>
+    </baseWeatherCommonalities>
+	<wildPlants>
+		
+	<!-- ground cover -->
+		<Plant_Grass>12.0</Plant_Grass>
+		<Plant_TallGrass>8.0</Plant_TallGrass>
+		<Plant_ShrubLow>8.0</Plant_ShrubLow>
+	
+	<!-- bushes -->
+		<BMT_Sundew>1.2</BMT_Sundew>
+		<BMT_PalmBush>1.2</BMT_PalmBush>
+		<Plant_Alocasia>3.2</Plant_Alocasia>
+		<Plant_PincushionCactus>2.4</Plant_PincushionCactus>
+		<Plant_Bush>0.60</Plant_Bush>
+		
+	<!-- decorative -->
+		<Plant_Clivia>0.28</Plant_Clivia>
+		<BMT_Caladium>2</BMT_Caladium>
+		<BMT_Anemone>0.8</BMT_Anemone>
+		<BMT_FloweringCactus>0.2</BMT_FloweringCactus>
+		
+	<!-- trees -->
+		<Plant_TreeCecropia>1.2</Plant_TreeCecropia>
+		<Plant_SaguaroCactus>0.8</Plant_SaguaroCactus>
+		<BMT_PrismPalm>1.2</BMT_PrismPalm>
+		
+	<!-- food -->
+		<BMT_AquamelonPlant>0.08</BMT_AquamelonPlant>
+		<BMT_DuneDelightPlant>0.28</BMT_DuneDelightPlant>
+		<Plant_Berry>0.20</Plant_Berry>
+	
+	<!-- aquatic -->
+		<BMT_Papyrus>0.003</BMT_Papyrus>
+		<BMT_Cattail>0.005</BMT_Cattail>
+		<BMT_Lilypad>0.005</BMT_Lilypad>
+		
+	<!-- other -->
+		<Plant_HealrootWild>0.2</Plant_HealrootWild>
+		
+    </wildPlants>
+    <wildAnimals>
+<!-- Grazers -->
+		<BMT_Scarab>0.3</BMT_Scarab>
+		<BMT_PalmWarbler>0.5</BMT_PalmWarbler>
+		<Iguana>1.2</Iguana>
+		<BMT_Heron>0.5</BMT_Heron>
+		<Monkey>0.3</Monkey>
+		<Gazelle>0.5</Gazelle>
+		<BiomesIslands_Flamingo>1.0</BiomesIslands_Flamingo>
+		<BMT_OrchidOkapi>0.4</BMT_OrchidOkapi>
+		<Dromedary>0.7</Dromedary>
+		<BMT_Tarimtula>0.3</BMT_Tarimtula>
+		<BMT_Tamarin>1</BMT_Tamarin>
+		<BMT_DuneStrider>0.05</BMT_DuneStrider>
+		
+<!-- Predators -->
+		<BMT_Sunsnake>0.07</BMT_Sunsnake> 
+		<BMT_GemScorpion>0.07</BMT_GemScorpion>
+		<BMT_Sutekh>0.05</BMT_Sutekh>
+		
+    </wildAnimals> 
+    <allowedPackAnimals>
+      <li>Muffalo</li>
+      <li>Elephant</li>
+      <li>Alpaca</li>
+    </allowedPackAnimals>
+  </BiomeDef>
+</Defs>
