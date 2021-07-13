@@ -7,7 +7,7 @@
 <ThingDef ParentName="PlantBase">
 	<defName>BMT_Papyrus</defName>
     <label>papyrus</label>
-    <description>TODO: Description</description>
+    <description>A tall, aquatic sedge that forms large stands in shallow water.</description>
     <statBases>
 		<MaxHitPoints>90</MaxHitPoints>
 		<Nutrition>0.2</Nutrition>
@@ -47,7 +47,7 @@
 <ThingDef ParentName="PlantBase">
 	<defName>BMT_Cattail</defName>
     <label>cattail</label>
-    <description>TODO: Description</description>
+    <description>A wetland plant with a large, sausage-shaped spike of flowers at the top.</description>
     <statBases>
 		<MaxHitPoints>90</MaxHitPoints>
 		<Nutrition>0.2</Nutrition>
