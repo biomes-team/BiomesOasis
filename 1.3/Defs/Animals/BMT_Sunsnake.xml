@@ -4,7 +4,7 @@
  <ThingDef ParentName="AnimalThingBase">
     <defName>BMT_Sunsnake</defName>
     <label>sunsnake</label>
-    <description>A large, brightly-colored snake. While not venomous, its powerful jaws still pose a threat unarmed colonists.</description>
+    <description>A large, brilliantly-colored snake. Despite being nonvenomous, its powerful jaws still pose a threat to unarmed colonists.</description>
     <statBases>
       <MoveSpeed>4.3</MoveSpeed>
       <MarketValue>280</MarketValue>

@@ -5,7 +5,7 @@
   <ThingDef ParentName="BigBirdThingBase">
     <defName>BMT_Heron</defName>
     <label>heron</label>
-    <description>A white bird with a long neck.</description>
+    <description>A white bird with a long neck and sharp beak for impaling prey.</description>
     <statBases>
       <MoveSpeed>3.6</MoveSpeed>
       <MarketValue>100</MarketValue>
@@ -15,8 +15,9 @@
       <herdAnimal>false</herdAnimal>
       <baseBodySize>0.6</baseBodySize>
       <baseHealthScale>0.6</baseHealthScale>
-      <baseHungerRate>0.50</baseHungerRate>
-      <foodType>VegetarianRoughAnimal</foodType>
+      <baseHungerRate>0.18</baseHungerRate>
+      <maxPreyBodySize>0.3</maxPreyBodySize>
+      <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
       <wildness>0.45</wildness>
       <trainability>None</trainability>
       <lifeExpectancy>9</lifeExpectancy>
@@ -75,7 +76,7 @@
       <li>
         <label>beak</label>
         <capacities>
-          <li>Bite</li>
+          <li>Stab</li>
         </capacities>
         <power>6</power>
         <cooldownTime>2</cooldownTime>
@@ -103,7 +104,6 @@
     </tools>
     <tradeTags>
       <li>AnimalCommon</li>
-      <li>AnimalFarm</li>
     </tradeTags>
   </ThingDef>
 
