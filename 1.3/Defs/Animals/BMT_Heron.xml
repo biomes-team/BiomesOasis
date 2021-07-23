@@ -39,10 +39,6 @@
         <li>
           <def>AnimalAdult</def>
           <minAge>0.4</minAge>
-          <soundWounded>ZDuck_BigDuck_Wounded</soundWounded>
-          <soundDeath>ZDuck_BigDuck_Death</soundDeath>
-          <soundCall>ZDuck_BigDuck_Call</soundCall>
-          <soundAngry>ZDuck_BigDuck_Angry</soundAngry>
         </li>
       </lifeStageAges>
     </race>
