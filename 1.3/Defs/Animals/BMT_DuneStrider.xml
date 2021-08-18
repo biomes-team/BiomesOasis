@@ -5,11 +5,13 @@
   <ThingDef ParentName="AnimalThingBase">
     <defName>BMT_DuneStrider</defName>
     <label>dune strider</label>
-    <description>A hulking, genetically-modified goat relative adapted for life in the harshest environments. Dune striders sport a shaggy fold of skin that helps them regulate their body temperature, as well as a furry coating on their hump which can be trimmed for a small amount of woolly hair. These animals are often seen accompanying desert nomads in their planet-wide journeys, their long necks announcing the caravan's presence over the desertic landscape.</description>
+    <description>A hulking, genetically-modified goat relative adapted for life in the harshest environments. Dune striders sport a shaggy fold of skin that helps them regulate their body temperature, as well as a furry coating on their hump which can be trimmed for a small amount of woolly hair. These animals are often seen accompanying desert nomads in their planet-wide journeys, their long necks announcing the caravan's presence over the desertic landscape.\n\nWhen in a caravan, people can ride dune striders to increase the caravan's speed.</description>
     <statBases>
       <MoveSpeed>4.8</MoveSpeed>
       <MarketValue>700</MarketValue>
       <ComfyTemperatureMin>-25</ComfyTemperatureMin>
+      <CaravanRidingSpeedFactor>1.3</CaravanRidingSpeedFactor>
+      <FilthRate>16</FilthRate>
     </statBases>
     <!-- <uiIconScale>1.2</uiIconScale> -->
     <tools>
@@ -63,6 +65,7 @@
       <leatherDef>Leather_Heavy</leatherDef>
       <gestationPeriodDays>51</gestationPeriodDays>
       <wildness>0.87</wildness>
+      <roamMtbDays>3</roamMtbDays>
       <trainability>Intermediate</trainability>
       <packAnimal>true</packAnimal>
       <nuzzleMtbHours>60</nuzzleMtbHours>

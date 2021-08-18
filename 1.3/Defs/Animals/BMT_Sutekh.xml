@@ -5,7 +5,7 @@
   <ThingDef ParentName="ThingBaseWolf">
     <defName>BMT_Sutekh</defName>
     <label>sutekh</label>
-    <description>A large canine genetically engineered to resemble the "Set Animal" in ancient Egyptian mythology.</description>
+    <description>A large canine genetically engineered to resemble the Set Animal in ancient Egyptian mythology.</description>
     <tools>
       <li>
         <label>left claw</label>

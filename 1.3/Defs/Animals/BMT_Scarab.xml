@@ -13,6 +13,7 @@
       <ArmorRating_Sharp>0.42</ArmorRating_Sharp>
       <ComfyTemperatureMin>0</ComfyTemperatureMin>
       <MarketValue>100</MarketValue>
+      <FilthRate>4</FilthRate>
       <LeatherAmount>0</LeatherAmount>
     </statBases>
     <!-- <uiIconScale>2</uiIconScale> -->
@@ -45,6 +46,7 @@
       <baseHealthScale>0.4</baseHealthScale>
       <useMeatFrom>Megaspider</useMeatFrom>
       <wildness>0.65</wildness>
+      <roamMtbDays>2.5</roamMtbDays>
       <manhunterOnDamageChance>0.05</manhunterOnDamageChance>
       <manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>
       <lifeExpectancy>10</lifeExpectancy>

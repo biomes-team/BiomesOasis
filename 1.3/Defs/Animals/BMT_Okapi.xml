@@ -10,6 +10,7 @@
       <MarketValue>220</MarketValue>
       <ComfyTemperatureMin>-25</ComfyTemperatureMin>
       <ComfyTemperatureMax>45</ComfyTemperatureMax>
+      <FilthRate>12</FilthRate>
     </statBases>
     <uiIconScale>1.25</uiIconScale>
     <tools>
@@ -63,6 +64,7 @@
       <leatherDef>Leather_Plain</leatherDef>
       <gestationPeriodDays>27</gestationPeriodDays>
       <wildness>0.15</wildness>
+      <roamMtbDays>3</roamMtbDays>
       <trainability>Intermediate</trainability>
       <manhunterOnDamageChance>0.05</manhunterOnDamageChance>
       <packAnimal>true</packAnimal>
