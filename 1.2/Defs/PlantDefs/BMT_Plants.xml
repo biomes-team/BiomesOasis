@@ -74,7 +74,6 @@
             <allowInShallow>true</allowInShallow>
             <allowInDeep>true</allowInDeep>
             <allowOnLand>false</allowOnLand>
-			<allowOnDry>true</allowInDry>
         </li>
     </modExtensions>
     <hideAtSnowDepth>0.5</hideAtSnowDepth>
