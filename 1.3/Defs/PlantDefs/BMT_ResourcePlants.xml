@@ -24,7 +24,6 @@
             <allowInShallow>true</allowInShallow>
             <allowInChestDeep>true</allowInChestDeep>
             <allowOnLand>true</allowOnLand>
-			<allowOnDry>true</allowOnDry>
 			<allowInBoggy>true</allowInBoggy>
         </li>
     </modExtensions>
@@ -66,7 +65,7 @@
             <allowInShallow>true</allowInShallow>
             <allowInDeep>false</allowInDeep>
             <allowOnLand>false</allowOnLand>
-			<allowOnDry>false</allowOnDry>
+
         </li>
     </modExtensions>
     <hideAtSnowDepth>0.5</hideAtSnowDepth>

@@ -103,12 +103,12 @@
         <max>7</max>
       </li>
 	  <li>
-        <terrain>MarshyTerrain</terrain>
+        <terrain>WaterShallow</terrain>
         <min>7</min>
         <max>18</max>
       </li>
 	  <li>
-        <terrain>Marsh</terrain>
+        <terrain>WaterDeep</terrain>
         <min>18</min>
         <max>999</max>
       </li>
@@ -155,9 +155,9 @@
 		<Plant_Berry>0.20</Plant_Berry>
 	
 	<!-- aquatic -->
-		<BMT_Papyrus>5.003</BMT_Papyrus>
-		<BMT_Cattail>0.005</BMT_Cattail>
-		<BMT_Lilypad>0.005</BMT_Lilypad>
+		<BMT_Papyrus>1.003</BMT_Papyrus>
+		<BMT_Cattail>0.05</BMT_Cattail>
+		<BMT_Lilypad>0.05</BMT_Lilypad>
 		
 	<!-- other -->
 		<Plant_HealrootWild>0.2</Plant_HealrootWild>
