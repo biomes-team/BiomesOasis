@@ -9,6 +9,7 @@
       <MaxHitPoints>150</MaxHitPoints>
       <Nutrition>0.25</Nutrition>
 	  <Beauty>6</Beauty>
+	  <BeautyOutdoors>6</BeautyOutdoors>
     </statBases>
     <graphicData>
       <texPath>BMT_Oasis/Plant/FloweringCactus</texPath>

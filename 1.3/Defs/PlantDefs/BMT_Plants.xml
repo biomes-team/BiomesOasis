@@ -28,6 +28,7 @@
     <description>A decorative plant with broad leaves.</description>
     <statBases>
       <Beauty>8</Beauty>
+	  <BeautyOutdoors>8</BeautyOutdoors>
       <Nutrition>0.1</Nutrition>
     </statBases>
     <graphicData>
@@ -65,6 +66,7 @@
     </graphicData>
     <statBases>
       <Beauty>3</Beauty>
+	  <BeautyOutdoors>3</BeautyOutdoors>
       <Nutrition>0.1</Nutrition>
     </statBases>
     <modExtensions>
@@ -120,6 +122,7 @@
     <statBases>
       <MaxHitPoints>85</MaxHitPoints>
       <Beauty>5</Beauty>
+	  <BeautyOutdoors>5</BeautyOutdoors>
       <Nutrition>0.2</Nutrition>
     </statBases>
     <graphicData>
