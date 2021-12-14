@@ -70,6 +70,7 @@
       <Nutrition>0.1</Nutrition>
     </statBases>
     <modExtensions>
+        <li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
 			<terrainTags>
 				<li>Water</li>
 				<li>Fresh</li>
