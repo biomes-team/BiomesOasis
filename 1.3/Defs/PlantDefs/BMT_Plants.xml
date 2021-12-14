@@ -70,14 +70,13 @@
       <Nutrition>0.1</Nutrition>
     </statBases>
     <modExtensions>
-        <li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
-			<allowInWater>true</allowInWater>
-            <allowInFresh>true</allowInFresh>
-            <allowInSalty>false</allowInSalty>
-            <allowInShallow>true</allowInShallow>
-            <allowInDeep>false</allowInDeep>
-            <allowOnLand>false</allowOnLand>
-	
+			<terrainTags>
+				<li>Water</li>
+				<li>Fresh</li>
+				<li>Shallow</li>
+				<li>ChestDeep</li>
+				<li>Deep</li>
+			</terrainTags>
         </li>
     </modExtensions>
     <hideAtSnowDepth>0.5</hideAtSnowDepth>

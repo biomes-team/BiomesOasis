@@ -18,13 +18,15 @@
 		<texPath>BMT_Oasis/Plant/Papyrus</texPath>
     </graphicData>
     <modExtensions>
-        <li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
-            <allowInWater>true</allowInWater>
-            <allowInFresh>true</allowInFresh>
-            <allowInShallow>true</allowInShallow>
-            <allowInChestDeep>true</allowInChestDeep>
-            <allowOnLand>true</allowOnLand>
-			<allowInBoggy>true</allowInBoggy>
+			<terrainTags>
+				<li>Water</li>
+				<li>Fresh</li>
+				<li>Shallow</li>
+				<li>ChestDeep</li>
+				<li>Deep</li>
+				<li>Soil</li>
+				<li>Boggy</li>
+			</terrainTags>
         </li>
     </modExtensions>
     <hideAtSnowDepth>0.5</hideAtSnowDepth>
@@ -59,13 +61,15 @@
 		<texPath>BMT_Oasis/Plant/Cattail</texPath>
     </graphicData>
     <modExtensions>
-        <li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
-            <allowInWater>true</allowInWater>
-            <allowInFresh>true</allowInFresh>
-            <allowInShallow>true</allowInShallow>
-            <allowInDeep>false</allowInDeep>
-            <allowOnLand>false</allowOnLand>
-
+			<terrainTags>
+				<li>Water</li>
+				<li>Fresh</li>
+				<li>Shallow</li>
+				<li>ChestDeep</li>
+				<li>Deep</li>
+				<li>Soil</li>
+				<li>Boggy</li>
+			</terrainTags>
         </li>
     </modExtensions>
     <hideAtSnowDepth>0.5</hideAtSnowDepth>
