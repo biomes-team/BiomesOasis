@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Plants Expanded</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+			<li Class="PatchOperationAdd"> 
+				<xpath>/Defs/BiomeDef[defName = "BMT_ChromaticOasis"]/wildPlants</xpath>
+				<value>
+					<VCE_PeachTree>0.005</VCE_PeachTree>
+					<VCE_Opuntia>0.005</VCE_Opuntia>
+				</value>
+			</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>
+
