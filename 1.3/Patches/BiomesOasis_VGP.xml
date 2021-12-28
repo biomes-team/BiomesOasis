@@ -28,7 +28,28 @@
 </Operation>
 
 
+<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>VGP Xtra Trees and Flowers</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
 
+		<li Class="PatchOperationAdd"> 
+			<xpath>/Defs/BiomeDef[defName = "BMT_ChromaticOasis"]/wildPlants</xpath>
+			<value>
+				<PlantTreeCamellia>0.03</PlantTreeCamellia>
+				<PlantAnthurium>0.01</PlantAnthurium>
+				<PlantNymphHair>0.01</PlantNymphHair>
+				<PlantPlumeria>0.01</PlantPlumeria>
+				<PlantSunflower>0.01</PlantSunflower>
+			</value>
+		</li>
+		
+		</operations>
+	</match>
+</Operation>
 
 </Patch>
 
