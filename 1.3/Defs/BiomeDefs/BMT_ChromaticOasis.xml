@@ -9,16 +9,11 @@
 	
 	<modExtensions>
         <li Class="BiomesCore.DefModExtensions.BiomesMap">
-			<!-- <minHillEncroachment>0</minHillEncroachment> -->
-			<!-- <maxHillEncroachment>0</maxHillEncroachment> -->
-            <!-- <minHillEdgeMultiplier>0</minHillEdgeMultiplier> -->
-            <!-- <maxHillEdgeMultiplier>0</maxHillEdgeMultiplier> -->
 			<isOasis>true</isOasis>
 		</li>
         <li Class="BiomesKit.BiomesKitControls">
 			<minimumLandNeighbors>6</minimumLandNeighbors>
             <allowOnLand>true</allowOnLand>
-			<maxHilliness>Flat</maxHilliness>
 			<spawnOnBiomes>
 				<li>Desert</li>
 				<li>ExtremeDesert</li>
