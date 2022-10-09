@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <ThingDef ParentName="BushBase">
+    <defName>BMT_Sundew</defName>
+    <label>sundew</label>
+    <description>A large sundew that thrives in moist environments. Its sticky leaves sparkle in the sun, luring small insects for the plant to feed on.</description>
+    <altitudeLayer>Building</altitudeLayer>
+    <graphicData>
+      <texPath>BMT_Oasis/Plant/Sundew</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shadowData>
+        <volume>(0.55, 0.2, 0.2)</volume>
+        <offset>(0,0,-0.42)</offset>
+      </shadowData>
+    </graphicData>
+    <plant>
+      <growDays>6</growDays>
+      <visualSizeRange>1.0~1.6</visualSizeRange>
+      <wildClusterWeight>80</wildClusterWeight>
+    </plant>
+  </ThingDef>
+  
+  
+  <ThingDef ParentName="PlantBase">
+    <defName>BMT_Caladium</defName>
+    <label>caladium</label>
+    <description>A decorative plant with broad leaves.</description>
+    <statBases>
+      <Beauty>8</Beauty>
+	  <BeautyOutdoors>8</BeautyOutdoors>
+      <Nutrition>0.1</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>BMT_Oasis/Plant/Caladium</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <!-- <uiIconScale>2.0</uiIconScale> -->
+    <altitudeLayer>Item</altitudeLayer>
+    <selectable>true</selectable>
+    <plant>
+      <dieIfLeafless>true</dieIfLeafless>
+      <sowWork>440</sowWork> 
+      <sowTags>
+        <li>Ground</li>
+        <li>Decorative</li>
+      </sowTags>
+      <growMinGlow>0.3</growMinGlow>
+      <topWindExposure>0.1</topWindExposure>
+      <growDays>5</growDays>
+      <visualSizeRange>0.7~1.4</visualSizeRange>
+      <wildOrder>1</wildOrder>
+      <purpose>Beauty</purpose>
+    </plant>
+  </ThingDef>
+
+
+
+<ThingDef ParentName="PlantBase">
+	<defName>BMT_Lilypad</defName>
+    <label>lilypad</label>
+    <description>A flowering water lily.</description>
+    <graphicData>
+		<graphicClass>Graphic_Random</graphicClass>
+		<texPath>BMT_Oasis/Plant/Lilypad</texPath>
+    </graphicData>
+    <statBases>
+      <Beauty>3</Beauty>
+	  <BeautyOutdoors>3</BeautyOutdoors>
+      <Nutrition>0.1</Nutrition>
+    </statBases>
+    <modExtensions>
+        <li Class="BiomesCore.DefModExtensions.Biomes_PlantControl">
+			<terrainTags>
+				<li>Water</li>
+				<li>Fresh</li>
+				<li>Shallow</li>
+				<li>ChestDeep</li>
+				<li>Deep</li>
+			</terrainTags>
+        </li>
+    </modExtensions>
+    <hideAtSnowDepth>0.5</hideAtSnowDepth>
+    <selectable>true</selectable>
+    <plant>
+		<fertilityMin>0.1</fertilityMin>
+		<fertilitySensitivity>0.8</fertilitySensitivity>
+		<growDays>3</growDays>
+		<visualSizeRange>0.7~1.1</visualSizeRange>
+		<topWindExposure>0.0</topWindExposure>
+		<wildClusterRadius>6</wildClusterRadius>
+		<wildClusterWeight>250</wildClusterWeight>
+		<wildOrder>2</wildOrder>
+        <wildEqualLocalDistribution>false</wildEqualLocalDistribution>
+    </plant>
+  </ThingDef>
+
+
+
+  <ThingDef ParentName="BushBase">
+    <defName>BMT_PalmBush</defName>
+    <label>palm bush</label>
+    <description>A short shrub with broad leaves.</description>
+    <graphicData>
+      <texPath>BMT_Oasis/Plant/PalmBush</texPath>
+      <drawSize>2.4</drawSize>
+      <shadowData>
+        <volume>(0.55, 0.2, 0.2)</volume>
+      </shadowData>
+    </graphicData>
+    <plant>
+      <growDays>3</growDays>
+      <!-- <leaflessGraphicPath>Things/Plant/Bush_Leafless</leaflessGraphicPath> -->
+    </plant>
+  </ThingDef>
+
+
+<ThingDef ParentName="PlantBase">
+    <defName>BMT_Anemone</defName>
+    <label>anemone</label>
+    <description>A small, brightly colored flower</description>
+    <statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+      <Beauty>5</Beauty>
+	  <BeautyOutdoors>5</BeautyOutdoors>
+      <Nutrition>0.2</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>BMT_Oasis/Plant/Anemone</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <hideAtSnowDepth>0.5</hideAtSnowDepth>
+    <ingestible />
+    <plant>
+      <fertilitySensitivity>0.0</fertilitySensitivity>
+      <growDays>3.2</growDays>
+      <fertilityMin>0.05</fertilityMin>
+      <maxMeshCount>9</maxMeshCount>
+      <visualSizeRange>0.4~0.7</visualSizeRange>
+      <topWindExposure>0.3</topWindExposure>
+      <wildClusterRadius>4</wildClusterRadius>
+      <wildClusterWeight>8</wildClusterWeight>
+      <wildOrder>1</wildOrder>
+      <purpose>Beauty</purpose>
+    </plant>
+  </ThingDef>
+
+
+</Defs>

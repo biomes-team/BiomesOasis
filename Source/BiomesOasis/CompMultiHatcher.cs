@@ -1,11 +1,5 @@
 ﻿using RimWorld;
 using RimWorld.Planet;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using UnityEngine;
 using Verse;
 
 namespace BiomesOasis
@@ -39,7 +33,7 @@ namespace BiomesOasis
 		public override void PostExposeData()
 		{
 			base.PostExposeData();
-			Scribe_Values.Look(ref gestateProgress, "gestateProgress", 0f);
+			Scribe_Values.Look(ref gestateProgress, "gestateProgress");
 			Scribe_References.Look(ref hatcheeParent, "hatcheeParent");
 			Scribe_References.Look(ref otherParent, "otherParent");
 			Scribe_References.Look(ref hatcheeFaction, "hatcheeFaction");
@@ -62,7 +56,7 @@ namespace BiomesOasis
 		{
 			try
 			{
-				PawnGenerationRequest request = new PawnGenerationRequest(Props.hatcherPawn, hatcheeFaction, PawnGenerationContext.NonPlayer, -1, forceGenerateNewPawn: false, newborn: true);
+				PawnGenerationRequest request = new PawnGenerationRequest(Props.hatcherPawn, hatcheeFaction, PawnGenerationContext.NonPlayer, -1, forceGenerateNewPawn: false, developmentalStages: DevelopmentalStage.Newborn);
 				int numToHatch = Props.numToHatch.RandomInRange;
 
 
@@ -108,7 +102,7 @@ namespace BiomesOasis
 
 		public override void PreAbsorbStack(Thing otherStack, int count)
 		{
-			float t = (float)count / (float)(parent.stackCount + count);
+			float t = count / (float)(parent.stackCount + count);
 			float b = ((ThingWithComps)otherStack).GetComp<CompMultiHatcher>().gestateProgress;
 			gestateProgress = UnityEngine.Mathf.Lerp(gestateProgress, b, t);
 		}

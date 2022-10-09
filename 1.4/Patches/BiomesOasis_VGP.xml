@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>VGP Vegetable Garden</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+
+		<li Class="PatchOperationAdd"> 
+			<xpath>/Defs/BiomeDef[defName = "BMT_ChromaticOasis"]/wildPlants</xpath>
+			<value>
+				<Wild_PlantPlumeria>0.01</Wild_PlantPlumeria>
+				<Plant_VG_Grass>1.0</Plant_VG_Grass>
+				<WildBananaTree>0.01</WildBananaTree>
+				<WildorangeTree>0.01</WildorangeTree>
+				<WildPeachTree>0.01</WildPeachTree>
+				<WildPlantpineapple>0.01</WildPlantpineapple>
+				<ST_WildHoneyTree>0.01</ST_WildHoneyTree>
+				<Plantmushroom>0.05</Plantmushroom>
+			</value>
+		</li>
+		
+		</operations>
+	</match>
+</Operation>
+
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>VGP Xtra Trees and Flowers</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+
+		<li Class="PatchOperationAdd"> 
+			<xpath>/Defs/BiomeDef[defName = "BMT_ChromaticOasis"]/wildPlants</xpath>
+			<value>
+				<PlantTreeCamellia>0.03</PlantTreeCamellia>
+				<PlantAnthurium>0.01</PlantAnthurium>
+				<PlantNymphHair>0.01</PlantNymphHair>
+				<PlantPlumeria>0.01</PlantPlumeria>
+				<PlantSunflower>0.01</PlantSunflower>
+			</value>
+		</li>
+		
+		</operations>
+	</match>
+</Operation>
+
+</Patch>
+

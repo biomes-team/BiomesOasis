@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Alpha Animals</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+
+		<li Class="PatchOperationAdd"> 
+			<xpath>/Defs/BiomeDef[defName = "BMT_ChromaticOasis"]/wildAnimals</xpath>
+			<value>
+				<AA_Aerofleet>0.1</AA_Aerofleet>
+				<AA_AngelMoth>0.05</AA_AngelMoth>
+				<AA_AnimusVox>0.05</AA_AnimusVox>
+				<AA_Barbslinger>0.05</AA_Barbslinger>
+				<AA_BloodShrimp>0.01</AA_BloodShrimp>
+				<AA_Bumbledrone>0.01</AA_Bumbledrone>
+				<AA_Cactipine>0.05</AA_Cactipine>
+				<AA_ChameleonYak>0.05</AA_ChameleonYak>
+				<AA_Cinderlisk>0.001</AA_Cinderlisk>
+				<AA_FissionMouse>0.01</AA_FissionMouse>
+				<AA_GreatDevourer>0.08</AA_GreatDevourer>
+				<AA_MammothWorm>0.02</AA_MammothWorm>
+				<AA_MeadowAve>0.04</AA_MeadowAve>
+				<AA_MegaLouse>0.03</AA_MegaLouse>
+				<AA_Needlepost>0.05</AA_Needlepost>
+				<AA_Needleroll>0.8</AA_Needleroll>
+				<AA_OvergrownColossus>0.001</AA_OvergrownColossus>
+				<AA_PebbleMit>0.07</AA_PebbleMit>
+				<AA_Radyak>0.001</AA_Radyak>
+				<AA_RayHound>0.07</AA_RayHound>
+				<AA_RoughPlatedMonitor>0.01</AA_RoughPlatedMonitor>
+				<AA_RoyalAve>0.01</AA_RoyalAve>
+				<AA_SandSquid>0.05</AA_SandSquid>
+				<AA_Swarmling>0.05</AA_Swarmling>
+				<AA_Thermadon>0.01</AA_Thermadon>
+				<AA_Wildpawn>0.05</AA_Wildpawn>
+			</value>
+		</li>
+		
+		</operations>
+	</match>
+</Operation>
+
+
+
+
+</Patch>
+
