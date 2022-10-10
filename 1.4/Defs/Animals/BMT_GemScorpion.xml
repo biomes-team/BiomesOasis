@@ -13,7 +13,7 @@
       <ComfyTemperatureMin>-10</ComfyTemperatureMin>
       <MarketValue>200</MarketValue>
       <LeatherAmount>0</LeatherAmount>
-      <ToxicSensitivity>0.8</ToxicSensitivity>
+      <ToxicResistance>0.2</ToxicResistance>
     </statBases>
     <uiIconScale>2</uiIconScale>
     <tools>

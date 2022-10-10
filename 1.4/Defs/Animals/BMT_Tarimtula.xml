@@ -13,7 +13,7 @@
       <LeatherAmount>0</LeatherAmount>
       <ArmorRating_Blunt>0.05</ArmorRating_Blunt>
       <ArmorRating_Sharp>0.10</ArmorRating_Sharp>
-      <ToxicSensitivity>0.8</ToxicSensitivity>
+      <ToxicResistance>0.2</ToxicResistance>
     </statBases>
     <uiIconScale>1.15</uiIconScale>
     <tools>
