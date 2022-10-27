@@ -37,16 +37,8 @@
     <soundsAmbient>
       <li>Ambient_NightInsects_Standard</li>
     </soundsAmbient>
-    <diseaseMtbDays>35</diseaseMtbDays>
+    <diseaseMtbDays>60</diseaseMtbDays>
     <diseases>
-      <li>
-        <diseaseInc>Disease_Malaria</diseaseInc>
-        <commonality>160</commonality>
-      </li>
-      <li>
-        <diseaseInc>Disease_SleepingSickness</diseaseInc>
-        <commonality>140</commonality>
-      </li>
       <li>
         <diseaseInc>Disease_Flu</diseaseInc>
         <commonality>100</commonality>
@@ -113,9 +105,9 @@
       <Clear>18</Clear>
       <Fog>1</Fog>
       <Rain>2</Rain>
-      <DryThunderstorm>0.3</DryThunderstorm>
-      <RainyThunderstorm>1.7</RainyThunderstorm>
-      <FoggyRain>1</FoggyRain>
+      <DryThunderstorm>1</DryThunderstorm>
+      <RainyThunderstorm>1</RainyThunderstorm>
+      <FoggyRain>0.5</FoggyRain>
       <SnowGentle>4</SnowGentle>
       <SnowHard>4</SnowHard>
     </baseWeatherCommonalities>
