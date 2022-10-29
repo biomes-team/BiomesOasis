@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>ReGrowth: Extinct Animals</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/BiomeDef[defName="BMT_ChromaticOasis"]/wildAnimals</xpath>
+			<value>
+				<RG_TerrorBird>0.2</RG_TerrorBird>
+				<RG_Megalenhydris>0.2</RG_Megalenhydris>
+			</value>
+		</match>
+	</Operation>
+</Patch>
