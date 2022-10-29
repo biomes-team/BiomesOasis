@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Birds Beyond: Tropical Rainforest</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/BiomeDef[defName="BMT_ChromaticOasis"]/wildAnimals</xpath>
+			<value>
+				<BB_Hornbill>0.05</BB_Hornbill>
+				<BB_Parrot>0.1</BB_Parrot>
+			</value>
+		</match>
+	</Operation>
+</Patch>
