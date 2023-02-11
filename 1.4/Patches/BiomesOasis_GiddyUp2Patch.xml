@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Giddy-Up 2 (temporary beta)</li>
+			<li>Giddy-Up 2</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+				<!-- DrawingOffsets: x: -left, +right, y: drawing priority, z: -down, +up. -->
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="BMT_DuneStrider"]</xpath>
+					<value>
+						<li Class="GiddyUp.DrawingOffset">
+							<northOffset>0,0,-0.5</northOffset>
+							<southOffset>0,-1,-0.5</southOffset>
+							<eastOffset>-0.05,0,-0.5</eastOffset>
+							<westOffset>0.05,0,-0.5</westOffset>
+						</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAddModExtension">
+					<xpath>/Defs/PawnKindDef[defName="BMT_DuneStrider"]</xpath>
+					<value>
+						<li Class="GiddyUp.CustomStats">
+							<speedModifier>1.1</speedModifier>
+						</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="BMT_OrchidOkapi"]</xpath>
+					<value>
+						<li Class="GiddyUp.DrawingOffset">
+							<northOffset>0,0,0</northOffset>
+							<southOffset>0,0,0</southOffset>
+							<eastOffset>0,0,0</eastOffset>
+							<westOffset>0,0,0</westOffset>
+						</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>
