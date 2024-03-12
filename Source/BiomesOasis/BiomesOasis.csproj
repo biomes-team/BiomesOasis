@@ -69,6 +69,8 @@
     <Compile Include="BiomesOasis.cs" />
     <Compile Include="CompMultiHatcher.cs" />
     <Compile Include="CompProperties_MultiHatcher.cs" />
+    <Compile Include="Planet\BiomeWorker_Oasis.cs" />
+    <Compile Include="Planet\WorldGenInfo_OasisPresence.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

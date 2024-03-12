@@ -1,4 +1,6 @@
 using BiomesCore.Planet;
+using BiomesCore.WorldMap;
+using RimWorld;
 using RimWorld.Planet;
 using UnityEngine;
 using Verse;
@@ -13,83 +15,47 @@ namespace BiomesOasis.Planet
 	public class WorldGenInfo_OasisPresence : WorldGenInfo
 	{
 		/// <summary>
-		/// Responsible for clustering islands together.
+		/// Responsible for clustering oases together.
 		/// </summary>
 		private ModuleBase _clusterNoise;
 
 		/// <summary>
-		/// Determines island positions near the mainland.
+		/// Determines positions of oases.
 		/// </summary>
-		private ModuleBase _elevationNoise;
-
-		/// <summary>
-		/// Determines positions of distant islands.
-		/// </summary>
-		private ModuleBase _distantNoise;
+		private ModuleBase _presenceNoise;
 
 		protected override void Setup()
 		{
 			int worldSeed = WorldGenInfoHandler.WorldSeed;
-			_clusterNoise = new Perlin(0.55, 2.0, 0.4, 6, Gen.HashCombineInt(worldSeed, -1214663760), QualityMode.High);
-			_elevationNoise = new Perlin(0.15, 2.0, 0.4, 6, Gen.HashCombineInt(worldSeed, -935172814), QualityMode.High);
-			_distantNoise = new Perlin(0.55, 2.0, 0.4, 6, Gen.HashCombineInt(worldSeed, 1011617332), QualityMode.High);
+			_clusterNoise = new Perlin(0.55, 2.0, 0.4, 6, Gen.HashCombineInt(worldSeed, 1588320896), QualityMode.High);
+			NoiseDebugUI.StorePlanetNoise(_clusterNoise, "BMT_Oasis_ClusterNoise");
+			_presenceNoise = new Perlin(0.55, 2.0, 0.4, 6, Gen.HashCombineInt(worldSeed, -1780198374), QualityMode.High);
+			NoiseDebugUI.StorePlanetNoise(_presenceNoise, "BMT_Oasis_PresenceNoise");
 		}
 
-		private bool CanHaveIsland(Tile tile, int tileID, Vector3 tileCenter)
+		private bool CanHaveOasis(Tile tile, int tileID, Vector3 tileCenter)
 		{
-			// Determines how many islands end up being present on the map.
-			const float islandFrequency = 0.2F;
-			// Makes islands cluster together. Also affects island frequency.
-			const float clusterThreshold = 0.4F;
+			// Determines how many oases end up being present on the map.
+			const float oasisFrequency = 0.35F;
+			// Minimum elevation for oases.
+			const float elevationThreshold = 55.0F;
+			// Oasis position threshold.
+			const float presenceThreshold = 0.5F;
+			// Makes oases cluster together. Also affects oases frequency.
+			const float clusterThreshold = 0.7F;
 
-			if (
-				!tile.WaterCovered ||
-				// Random chance used to prevent islands from spawning next to each other.
-				!Rand.ChanceSeeded(islandFrequency, Gen.HashCombineInt(WorldGenInfoHandler.WorldSeed, tileID)) ||
-				// Prefer spawning on clusters.
-				_clusterNoise.GetValue(tileCenter) < clusterThreshold)
-			{
-				return false;
-			}
-
-			const float elevationMean = -150.0F;
-			const float elevationVariance = 40.0F;
-			const float elevationWidth = 25.0F;
-
-			float chainElev = elevationMean + _elevationNoise.GetValue(tileCenter) * elevationVariance;
-			float elevation = WorldGenInfoHandler.NoiseElevation.GetValue(tileCenter);
-
-			if (elevation > chainElev - elevationWidth && elevation < chainElev + elevationWidth)
-			{
-				return true;
-			}
-
-			// Islands that can appear far away from the mainland.
-			const float distantThreshold = 0.95F;
-			return _distantNoise.GetValue(tileCenter) > distantThreshold;
+			return !tile.WaterCovered && tile.hilliness <= Hilliness.SmallHills &&
+			       WorldGenInfoHandler.NoiseElevation.GetValue(tileCenter) > elevationThreshold &&
+			       _presenceNoise.GetValue(tileCenter) > presenceThreshold &&
+			       _clusterNoise.GetValue(tileCenter) > clusterThreshold &&
+			       Rand.ChanceSeeded(oasisFrequency, Gen.HashCombineInt(WorldGenInfoHandler.WorldSeed, tileID));
 		}
 
 		protected override float GenerateTileData(Tile tile, int tileID, Vector3 tileCenter)
 		{
-			if (!CanHaveIsland(tile, tileID, tileCenter))
-			{
-				return -1.0F;
-			}
-
-			const float archipelagoFrequency = 0.1F;
-			return Rand.ChanceSeeded(archipelagoFrequency, Gen.HashCombineInt(WorldGenInfoHandler.WorldSeed, tileID))
+			return CanHaveOasis(tile, tileID, tileCenter)
 				? 1.0F
 				: 0.0F;
-		}
-
-		public static bool AllowsIsland(float value)
-		{
-			return value > -0.5F;
-		}
-
-		public static bool IsArchipelago(float value)
-		{
-			return value > 0.5F;
 		}
 	}
 }
