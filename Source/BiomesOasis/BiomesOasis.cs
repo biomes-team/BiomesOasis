@@ -6,7 +6,7 @@ using Verse;
 namespace BiomesOasis
 {
 	[StaticConstructorOnStartup]
-	static class BiomesOasis
+	public static class BiomesOasis
 	{
 		static BiomesOasis()
 		{

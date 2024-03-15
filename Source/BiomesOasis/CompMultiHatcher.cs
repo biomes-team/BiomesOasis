@@ -4,8 +4,8 @@ using Verse;
 
 namespace BiomesOasis
 {
-    public class CompMultiHatcher : ThingComp
-    {
+	public class CompMultiHatcher : ThingComp
+	{
 		private float gestateProgress;
 
 		public Pawn hatcheeParent;
@@ -14,7 +14,7 @@ namespace BiomesOasis
 
 		public Faction hatcheeFaction;
 
-		public CompProperties_MultiHatcher Props => (CompProperties_MultiHatcher)props;
+		public CompProperties_MultiHatcher Props => (CompProperties_MultiHatcher) props;
 
 		private CompTemperatureRuinable FreezerComp => parent.GetComp<CompTemperatureRuinable>();
 
@@ -26,6 +26,7 @@ namespace BiomesOasis
 				{
 					return FreezerComp.Ruined;
 				}
+
 				return false;
 			}
 		}
@@ -56,7 +57,9 @@ namespace BiomesOasis
 		{
 			try
 			{
-				PawnGenerationRequest request = new PawnGenerationRequest(Props.hatcherPawn, hatcheeFaction, PawnGenerationContext.NonPlayer, -1, forceGenerateNewPawn: false, developmentalStages: DevelopmentalStage.Newborn);
+				PawnGenerationRequest request = new PawnGenerationRequest(Props.hatcherPawn, hatcheeFaction,
+					PawnGenerationContext.NonPlayer, -1, forceGenerateNewPawn: false,
+					developmentalStages: DevelopmentalStage.Newborn);
 				int numToHatch = Props.numToHatch.RandomInRange;
 
 
@@ -69,20 +72,26 @@ namespace BiomesOasis
 						{
 							if (hatcheeParent != null)
 							{
-								if (pawn.playerSettings != null && hatcheeParent.playerSettings != null && hatcheeParent.Faction == hatcheeFaction)
+								if (pawn.playerSettings != null && hatcheeParent.playerSettings != null &&
+								    hatcheeParent.Faction == hatcheeFaction)
 								{
-									pawn.playerSettings.AreaRestriction = hatcheeParent.playerSettings.AreaRestriction;
+									pawn.playerSettings.AreaRestrictionInPawnCurrentMap =
+										hatcheeParent.playerSettings.AreaRestrictionInPawnCurrentMap;
 								}
+
 								if (pawn.RaceProps.IsFlesh)
 								{
 									pawn.relations.AddDirectRelation(PawnRelationDefOf.Parent, hatcheeParent);
 								}
 							}
-							if (otherParent != null && (hatcheeParent == null || hatcheeParent.gender != otherParent.gender) && pawn.RaceProps.IsFlesh)
+
+							if (otherParent != null && (hatcheeParent == null || hatcheeParent.gender != otherParent.gender) &&
+							    pawn.RaceProps.IsFlesh)
 							{
 								pawn.relations.AddDirectRelation(PawnRelationDefOf.Parent, otherParent);
 							}
 						}
+
 						if (parent.Spawned)
 						{
 							FilthMaker.TryMakeFilth(parent.Position, parent.Map, ThingDefOf.Filth_AmnioticFluid);
@@ -95,21 +104,21 @@ namespace BiomesOasis
 				}
 			}
 			finally
-			{ 
+			{
 				parent.Destroy();
 			}
 		}
 
 		public override void PreAbsorbStack(Thing otherStack, int count)
 		{
-			float t = count / (float)(parent.stackCount + count);
-			float b = ((ThingWithComps)otherStack).GetComp<CompMultiHatcher>().gestateProgress;
+			float t = count / (float) (parent.stackCount + count);
+			float b = ((ThingWithComps) otherStack).GetComp<CompMultiHatcher>().gestateProgress;
 			gestateProgress = UnityEngine.Mathf.Lerp(gestateProgress, b, t);
 		}
 
 		public override void PostSplitOff(Thing piece)
 		{
-			CompMultiHatcher comp = ((ThingWithComps)piece).GetComp<CompMultiHatcher>();
+			CompMultiHatcher comp = ((ThingWithComps) piece).GetComp<CompMultiHatcher>();
 			comp.gestateProgress = gestateProgress;
 			comp.hatcheeParent = hatcheeParent;
 			comp.otherParent = otherParent;
@@ -142,8 +151,8 @@ namespace BiomesOasis
 			{
 				return "EggProgress".Translate() + ": " + gestateProgress.ToStringPercent();
 			}
+
 			return null;
 		}
 	}
 }
-
