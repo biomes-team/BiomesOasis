@@ -2,7 +2,7 @@
 <Defs>
 
 	<!-- crops -->
-	<ThingDef ParentName="PlantFoodRawBase">
+	<ThingDef ParentName="BiomesCore_FruitBase">
 		<defName>BMT_Aquamelon</defName>
 		<label>aquamelon</label>
 		<description>Aquamelons.</description>
@@ -26,7 +26,7 @@
 		</ingestible>
 	</ThingDef>
 
-	<ThingDef ParentName="PlantFoodRawBase">
+	<ThingDef ParentName="BiomesCore_FruitBase">
 		<defName>BMT_DuneDelight</defName>
 		<label>dune delight</label>
 		<description>Delightful.</description>

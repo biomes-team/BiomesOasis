@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BiomeDef[defName="BMT_ChromaticOasis"]/wildAnimals</xpath>
+		<value>
+			<AEXP_Boombat>0.3</AEXP_Boombat>
+			<AEXP_Camel>0.3</AEXP_Camel>
+			<AEXP_Cheetah>0.3</AEXP_Cheetah>
+			<AEXP_Coyote>0.3</AEXP_Coyote>
+			<AEXP_Crocodile>0.1</AEXP_Crocodile>
+			<AEXP_DesertTortoise>0.9</AEXP_DesertTortoise>
+			<AEXP_GilaMonster>0.4</AEXP_GilaMonster>
+			<AEXP_Gorilla>0.5</AEXP_Gorilla>
+			<AEXP_Hyena>0.6</AEXP_Hyena>
+			<AEXP_Jaguar>0.1</AEXP_Jaguar>
+			<AEXP_Kangaroo>0.3</AEXP_Kangaroo>
+			<AEXP_Koala>0.2</AEXP_Koala>
+			<AEXP_Lemur>1</AEXP_Lemur>
+			<AEXP_Lion>0.4</AEXP_Lion>
+			<AEXP_Mandrill>0.8</AEXP_Mandrill>
+			<AEXP_Megascorpion>0.2</AEXP_Megascorpion>
+			<AEXP_Rattlesnake>0.2</AEXP_Rattlesnake>
+			<AEXP_Tapir>0.4</AEXP_Tapir>
+			<AEXP_Wildebeest>0.2</AEXP_Wildebeest>
+			<AEXP_Zebra>0.2</AEXP_Zebra>
+		</value>
+	</Operation>
+
+</Patch>

@@ -10,7 +10,7 @@
 	
 	
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/IncidentDef[defName = "Alphabeavers"]/allowedBiomes</xpath>
+		<xpath>Defs/IncidentDef[defName="Alphabeavers"]/allowedBiomes</xpath>
 		<value>
 			<li>BiomesIslands_TundraIsland</li>
 			<li>BiomesIslands_TundraArchipelago</li>
