@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/IncidentDef[defName="Alphabeavers" or defName="AmbrosiaSprout" or defName="HerdMigration"]/allowedBiomes</xpath>
+		<value>
+			<li>BMT_ChromaticOasis</li>
+		</value>
+	</Operation>
+
+</Patch>
