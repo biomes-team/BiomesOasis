@@ -15,6 +15,7 @@
 			<baseBodySize>0.6</baseBodySize>
 			<baseHealthScale>0.6</baseHealthScale>
 			<baseHungerRate>0.18</baseHungerRate>
+			<predator>true</predator>
 			<maxPreyBodySize>0.3</maxPreyBodySize>
 			<foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
 			<wildness>0.45</wildness>
