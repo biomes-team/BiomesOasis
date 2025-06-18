@@ -12,7 +12,7 @@ namespace BiomesOasis.Planet
 	/// </summary>
 	public class BiomeWorker_Oasis : BiomeWorker
 	{
-		public override float GetScore(Tile tile, int tileID)
+		public override float GetScore(BiomeDef biome, Tile tile, PlanetTile planetTile)
 		{
 			if (tile.WaterCovered)
 			{
@@ -21,7 +21,7 @@ namespace BiomesOasis.Planet
 
 			float desertScore = Math.Max(BiomeWorkerUtil.DesertScore(tile), BiomeWorkerUtil.ExtremeDesertScore(tile));
 			return desertScore > 0.0F
-				? desertScore + WorldGenInfoHandler.Get<WorldGenInfo_OasisPresence>().GetValue(tileID)
+				? desertScore + WorldGenInfoHandler.Get<WorldGenInfo_OasisPresence>().GetValue(planetTile)
 				: 0.0F;
 		}
 	}

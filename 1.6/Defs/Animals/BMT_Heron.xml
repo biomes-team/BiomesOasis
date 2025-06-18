@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BigBirdThingBase">
+		<defName>BMT_Heron</defName>
+		<label>heron</label>
+		<description>A white bird with a long neck and sharp beak for impaling prey.</description>
+		<statBases>
+			<MoveSpeed>3.6</MoveSpeed>
+			<MarketValue>100</MarketValue>
+			<ComfyTemperatureMin>-8</ComfyTemperatureMin>
+		</statBases>
+		<race>
+			<herdAnimal>false</herdAnimal>
+			<baseBodySize>0.6</baseBodySize>
+			<baseHealthScale>0.6</baseHealthScale>
+			<baseHungerRate>0.18</baseHungerRate>
+			<predator>true</predator>
+			<maxPreyBodySize>0.3</maxPreyBodySize>
+			<foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
+			<wildness>0.45</wildness>
+			<trainability>None</trainability>
+			<lifeExpectancy>9</lifeExpectancy>
+			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0</manhunterOnDamageChance>
+			<lifeStageAges>
+				<li>
+					<def>AnimalBaby</def>
+					<minAge>0</minAge>
+					<soundWounded>Pawn_Chick_Call</soundWounded>
+					<soundDeath>Pawn_Chick_Call</soundDeath>
+					<soundCall>Pawn_Chick_Call</soundCall>
+					<soundAngry>Pawn_Chick_Call</soundAngry>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>0.2</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.4</minAge>
+				</li>
+			</lifeStageAges>
+		</race>
+		<comps>
+			<li Class="CompProperties_EggLayer">
+				<eggFertilizedDef>BMT_EggHeronFertilized</eggFertilizedDef>
+				<eggFertilizationCountMax>1</eggFertilizationCountMax>
+				<eggLayIntervalDays>11</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggCountRange>1~1</eggCountRange>
+			</li>
+		</comps>
+		<tools>
+			<li>
+				<label>claws</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>1.5</cooldownTime>
+				<linkedBodyPartsGroup>Feet</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>beak</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>6</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Beak</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>4</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<tradeTags>
+			<li>AnimalCommon</li>
+		</tradeTags>
+	</ThingDef>
+
+	<PawnKindDef ParentName="BigBirdKindBase">
+		<defName>BMT_Heron</defName>
+		<label>heron</label>
+		<race>BMT_Heron</race>
+		<combatPower>50</combatPower>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Oasis/Animal/Heron/Heron</texPath>
+					<drawSize>1.0</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Emu/Dessicated_Emu</texPath>
+					<drawSize>1.0</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Oasis/Animal/Heron/Heron</texPath>
+					<drawSize>1.2</drawSize>
+					<shadowData>
+						<volume>(0.3, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Emu/Dessicated_Emu</texPath>
+					<drawSize>1.2</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Oasis/Animal/Heron/Heron</texPath>
+					<drawSize>1.4</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.4, 0.4)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Emu/Dessicated_Emu</texPath>
+					<drawSize>1.4</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+
+	<ThingDef ParentName="EggFertBase">
+		<defName>BMT_EggHeronFertilized</defName>
+		<label>heron egg (fert.)</label>
+		<description>A fertilized heron egg. If all goes well, it should hatch into a baby heron. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<color>(172,203,204)</color>
+			<drawSize>1.1</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>11.0</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>5</hatcherDaystoHatch>
+				<hatcherPawn>BMT_Heron</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+
+
+</Defs>
+

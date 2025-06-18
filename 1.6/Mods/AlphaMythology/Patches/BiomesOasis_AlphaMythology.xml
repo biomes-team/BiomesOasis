@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BiomeDef[defName="BMT_ChromaticOasis"]/wildAnimals</xpath>
+		<value>
+			<MM_Catoblepas>0.01</MM_Catoblepas>
+			<MM_Chimera>0.005</MM_Chimera>
+			<MM_Kappa>0.01</MM_Kappa>
+			<MM_LesserWyvern>0.001</MM_LesserWyvern>
+			<MM_Manticore>0.01</MM_Manticore>
+			<MM_Pegasus>0.001</MM_Pegasus>
+			<MM_StymphalianBird>0.005</MM_StymphalianBird>
+			<MM_Tlilcoatl>0.01</MM_Tlilcoatl>
+			<MM_Xiezhi>0.01</MM_Xiezhi>
+		</value>
+	</Operation>
+
+</Patch>

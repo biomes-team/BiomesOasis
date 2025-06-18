@@ -32,4 +32,23 @@
 		<li IfModActive="dismarzero.VGP.VGPVegetableGarden">1.5/Mods/VGPVegetableGarden</li>
 		<li IfModActive="dismarzero.VGP.XtraTreesandFlowers">1.5/Mods/VGPXtraTreesandFlowers</li>
 	</v1.5>
+	<v1.6>
+		<li>\</li>
+		<li>1.6</li>
+		<li IfModActive="sarg.alphaanimals">1.6/Mods/AlphaAnimals</li>
+		<li IfModActive="sarg.rimbees">1.6/Mods/AlphaBees</li>
+		<li IfModActive="sarg.magicalmenagerie">1.6/Mods/AlphaMythology</li>
+		<li IfModActive="Zeitloser.BirdsBeyond.TRF">1.6/Mods/BirdsBeyondTropical</li>
+		<li IfModActive="Erin.Valheim.Creatures">1.6/Mods/ErinsValheim</li>
+		<li IfModActive="Rikiki.FishIndustry">1.6/Mods/FishIndustry</li>
+		<li IfModActive="Owlchemist.GiddyUp">1.6/Mods/GiddyUp2</li>
+		<li IfModActive="Gargamiel.PokeWorld">1.6/Mods/PokeWorld</li>
+		<li IfModActive="ReGrowth.BOTR.ExtinctAnimalsPack">1.6/Mods/ReGrowthExtinctAnimals</li>
+		<li IfModActive="VanillaExpanded.VanillaAnimalsExpanded">1.6/Mods/VanillaAnimalsExpanded</li>
+		<li IfModActive="VanillaExpanded.VCEF">1.6/Mods/VanillaFishingExpanded</li>
+		<li IfModActive="VanillaExpanded.VPlantsE">1.6/Mods/VanillaPlantsExpanded</li>
+		<li IfModActive="VanillaExpanded.VPlantsEMore">1.6/Mods/VanillaPlantsExpandedMore</li>
+		<li IfModActive="dismarzero.VGP.VGPVegetableGarden">1.6/Mods/VGPVegetableGarden</li>
+		<li IfModActive="dismarzero.VGP.XtraTreesandFlowers">1.6/Mods/VGPXtraTreesandFlowers</li>
+	</v1.6>
 </loadFolders>

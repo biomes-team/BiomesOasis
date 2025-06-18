@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BiomeDef[defName="BMT_ChromaticOasis"]/wildAnimals</xpath>
+		<value>
+			<ERN_Neck>0.3</ERN_Neck>
+		</value>
+	</Operation>
+
+</Patch>

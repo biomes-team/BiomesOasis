@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BiomeDef[defName="BMT_ChromaticOasis"]/wildPlants</xpath>
+		<value>
+			<VCE_PeachTree>0.005</VCE_PeachTree>
+			<VCE_Opuntia>0.005</VCE_Opuntia>
+		</value>
+	</Operation>
+
+</Patch>
+

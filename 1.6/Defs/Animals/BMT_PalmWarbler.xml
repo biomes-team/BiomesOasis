@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BigBirdThingBase">
+		<defName>BMT_PalmWarbler</defName>
+		<label>palm warbler</label>
+		<description>A small bird commonly found in oases.</description>
+		<statBases>
+			<MoveSpeed>4.6</MoveSpeed>
+			<MarketValue>80</MarketValue>
+			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
+			<ComfyTemperatureMax>55</ComfyTemperatureMax>
+		</statBases>
+		<race>
+			<herdAnimal>true</herdAnimal>
+			<baseBodySize>0.2</baseBodySize>
+			<baseHealthScale>0.4</baseHealthScale>
+			<baseHungerRate>0.30</baseHungerRate>
+			<foodType>VegetarianRoughAnimal</foodType>
+			<leatherDef>Leather_Bird</leatherDef>
+			<wildness>0.50</wildness>
+			<trainability>None</trainability>
+			<petness>0.20</petness>
+			<nuzzleMtbHours>24</nuzzleMtbHours>
+			<lifeExpectancy>7</lifeExpectancy>
+			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0</manhunterOnDamageChance>
+			<lifeStageAges>
+				<li>
+					<def>AnimalBaby</def>
+					<minAge>0</minAge>
+					<soundWounded>Pawn_Chick_Call</soundWounded>
+					<soundDeath>Pawn_Chick_Call</soundDeath>
+					<soundCall>Pawn_Chick_Call</soundCall>
+					<soundAngry>Pawn_Chick_Call</soundAngry>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>0.15</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.27</minAge>
+				</li>
+			</lifeStageAges>
+		</race>
+		<comps>
+			<li Class="CompProperties_EggLayer">
+				<eggFertilizedDef>BMT_EggPalmWarblerFertilized</eggFertilizedDef>
+				<eggFertilizationCountMax>1</eggFertilizationCountMax>
+				<eggLayIntervalDays>9</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggCountRange>1~2</eggCountRange>
+			</li>
+		</comps>
+		<tools>
+			<li>
+				<label>claws</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>3.5</power>
+				<cooldownTime>1.5</cooldownTime>
+				<linkedBodyPartsGroup>Feet</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>beak</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>4</power>
+				<cooldownTime>1.8</cooldownTime>
+				<linkedBodyPartsGroup>Beak</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>2</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<tradeTags>
+			<li>AnimalUncommon</li>
+		</tradeTags>
+	</ThingDef>
+
+	<PawnKindDef ParentName="BigBirdKindBase">
+		<defName>BMT_PalmWarbler</defName>
+		<label>palm warbler</label>
+		<race>BMT_PalmWarbler</race>
+		<combatPower>33</combatPower>
+		<ecoSystemWeight>0.3</ecoSystemWeight>
+		<wildGroupSize>1~4</wildGroupSize>
+		<alternateGraphicChance>0.66</alternateGraphicChance>
+		<alternateGraphics>
+			<li>
+				<color>(0.557,0.176,0.349,1)</color>
+			</li>
+			<li>
+				<color>(0.443,0.157,0.361,1)</color>
+			</li>
+		</alternateGraphics>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Oasis/Animal/PalmWarbler/PalmWarbler</texPath>
+					<drawSize>0.5</drawSize>
+					<color>(0.713,0.208,0.325)</color>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Emu/Dessicated_Emu</texPath>
+					<drawSize>0.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Oasis/Animal/PalmWarbler/PalmWarbler</texPath>
+					<drawSize>0.60</drawSize>
+					<color>(0.713,0.208,0.325)</color>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Emu/Dessicated_Emu</texPath>
+					<drawSize>0.60</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>BMT_Oasis/Animal/PalmWarbler/PalmWarbler</texPath>
+					<drawSize>0.70</drawSize>
+					<color>(0.713,0.208,0.325)</color>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Emu/Dessicated_Emu</texPath>
+					<drawSize>0.70</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+	<ThingDef ParentName="EggFertBase">
+		<defName>BMT_EggPalmWarblerFertilized</defName>
+		<label>palm warbler egg (fert.)</label>
+		<description>A fertilized palm warbler egg. If all goes well, it should hatch into a baby palm warbler. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<color>(233,205,223)</color>
+			<drawSize>0.7</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>7.0</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>5</hatcherDaystoHatch>
+				<hatcherPawn>BMT_PalmWarbler</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+
+</Defs>
+

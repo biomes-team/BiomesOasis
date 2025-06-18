@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- crops -->
+	<ThoughtDef>
+		<defName>BMT_AteDuneDelight</defName>
+		<durationDays>1</durationDays>
+		<stages>
+			<li>
+				<label>delighted</label>
+				<description>I ate a dune delight. Delightful!</description>
+				<baseMoodEffect>6</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+</Defs>
