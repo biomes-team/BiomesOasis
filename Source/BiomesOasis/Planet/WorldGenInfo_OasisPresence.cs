@@ -33,7 +33,7 @@ namespace BiomesOasis.Planet
 			NoiseDebugUI.StorePlanetNoise(_presenceNoise, "BMT_Oasis_PresenceNoise");
 		}
 
-		private bool CanHaveOasis(Tile tile, int tileID, Vector3 tileCenter)
+		private bool CanHaveOasis(PlanetTile tile, Vector3 tileCenter)
 		{
 			// Determines how many oases end up being present on the map.
 			const float oasisFrequency = 0.35F;
@@ -44,16 +44,16 @@ namespace BiomesOasis.Planet
 			// Makes oases cluster together. Also affects oases frequency.
 			const float clusterThreshold = 0.7F;
 
-			return !tile.WaterCovered && tile.hilliness <= Hilliness.SmallHills &&
+			return !tile.Tile.WaterCovered && tile.Tile.hilliness <= Hilliness.SmallHills &&
 			       WorldGenInfoHandler.NoiseElevation.GetValue(tileCenter) > elevationThreshold &&
 			       _presenceNoise.GetValue(tileCenter) > presenceThreshold &&
 			       _clusterNoise.GetValue(tileCenter) > clusterThreshold &&
-			       Rand.ChanceSeeded(oasisFrequency, Gen.HashCombineInt(WorldGenInfoHandler.WorldSeed, tileID));
+			       Rand.ChanceSeeded(oasisFrequency, Gen.HashCombineInt(WorldGenInfoHandler.WorldSeed, tile.tileId));
 		}
 
-		protected override float GenerateTileData(Tile tile, int tileID, Vector3 tileCenter)
+		protected override float GenerateTileData(PlanetTile tile, Vector3 tileCenter)
 		{
-			return CanHaveOasis(tile, tileID, tileCenter)
+			return CanHaveOasis(tile, tileCenter)
 				? 1.0F
 				: 0.0F;
 		}
