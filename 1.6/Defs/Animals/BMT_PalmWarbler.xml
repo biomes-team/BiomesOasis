@@ -47,6 +47,7 @@
 		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>BMT_EggPalmWarblerFertilized</eggFertilizedDef>
+				<eggUnfertilizedDef>BMT_EggPalmWarblerUnfertilized</eggUnfertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
 				<eggLayIntervalDays>9</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
@@ -161,5 +162,20 @@
 		</comps>
 	</ThingDef>
 
+
+	<ThingDef ParentName="EggUnfertBase">
+		<defName>BMT_EggPalmWarblerUnfertilized</defName>
+		<label>palm warbler egg (unfert.)</label>
+		<description>An unfertilized palm warbler egg. It can be eaten raw, but it's much, much better cooked.</description>
+		<graphicData>
+			<color>(223,195,213)</color>
+			<drawSize>0.7</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>7.0</MarketValue>
+		</statBases>
+	</ThingDef>
+	
+	
 </Defs>
 

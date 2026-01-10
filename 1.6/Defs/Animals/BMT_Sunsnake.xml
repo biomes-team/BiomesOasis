@@ -45,6 +45,7 @@
 		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>BMT_EggSunsnakeFertilized</eggFertilizedDef>
+				<eggUnfertilizedDef>BMT_EggSunsnakeUnfertilized</eggUnfertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
 				<eggLayIntervalDays>18.0</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
@@ -163,6 +164,19 @@
 		</comps>
 	</ThingDef>
 
-
+	<ThingDef ParentName="EggUnfertBase">
+		<defName>BMT_EggSunsnakeUnfertilized</defName>
+		<label>sunsnake egg (unfert.)</label>
+		<description>An unfertilized sunsnake egg. It can be eaten raw, but it's much, much better cooked.</description>
+		<graphicData>
+			<color>(135,33,60)</color>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>27.0</MarketValue>
+		</statBases>
+	</ThingDef>
+	
+	
 </Defs>
 

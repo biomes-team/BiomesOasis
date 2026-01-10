@@ -73,6 +73,7 @@
 		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>BMT_EggScarabFertilized</eggFertilizedDef>
+				<eggUnfertilizedDef>BMT_EggScarabUnfertilized</eggUnfertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
 				<eggLayIntervalDays>4.5</eggLayIntervalDays>
 				<eggCountRange>1</eggCountRange>
@@ -147,5 +148,20 @@
 		</comps>
 	</ThingDef>
 
+
+	<ThingDef ParentName="EggUnfertBase">
+		<defName>BMT_EggScarabUnfertilized</defName>
+		<label>scarab egg (unfert.)</label>
+		<description>An unfertilized scarab egg. It can be eaten raw, but it's much, much better cooked.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
+			<color>(170,146,124)</color>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>5.0</MarketValue>
+		</statBases>
+	</ThingDef>
+	
 </Defs>
 

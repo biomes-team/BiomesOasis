@@ -96,6 +96,7 @@
 		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>BMT_EggGemScorpionFertilized</eggFertilizedDef>
+				<eggUnfertilizedDef>BMT_EggGemScorpionUnfertilized</eggUnfertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
 				<eggLayIntervalDays>14.0</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
@@ -215,5 +216,22 @@
 	</ThingDef>
 
 
+
+	<ThingDef ParentName="EggUnfertBase">
+		<defName>BMT_EggGemScorpionUnfertilized</defName>
+		<label>gem scorpion egg (unfert.)</label>
+		<description>An unfertilized gem scorpion egg. It can be eaten raw, but it's much, much better cooked.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
+			<color>(139,138,163)</color>
+			<drawSize>0.6</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>9.0</MarketValue>
+		</statBases>
+	</ThingDef>
+	
+	
+	
 </Defs>
 

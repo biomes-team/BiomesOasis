@@ -45,6 +45,7 @@
 		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>BMT_EggHeronFertilized</eggFertilizedDef>
+				<eggUnfertilizedDef>BMT_EggHeronUnfertilized</eggUnfertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
 				<eggLayIntervalDays>11</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
@@ -171,5 +172,20 @@
 	</ThingDef>
 
 
+
+	<ThingDef ParentName="EggUnfertBase">
+		<defName>BMT_EggHeronUnfertilized</defName>
+		<label>heron egg (unfert.)</label>
+		<description>An unfertilized heron egg. It can be eaten raw, but it's much, much better cooked.</description>
+		<graphicData>
+			<color>(162,193,194)</color>
+			<drawSize>1.1</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>6.0</MarketValue>
+		</statBases>
+	</ThingDef>
+	
+	
 </Defs>
 

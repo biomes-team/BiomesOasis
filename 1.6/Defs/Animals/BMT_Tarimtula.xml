@@ -72,6 +72,7 @@
 		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>BMT_EggsacTarimtulaFertilized</eggFertilizedDef>
+				<eggUnfertilizedDef>BMT_EggsacTarimtulaUnfertilized</eggUnfertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
 				<eggLayIntervalDays>20.0</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
@@ -151,5 +152,22 @@
 			</li>
 		</comps>
 	</ThingDef>
+>
 
+	<ThingDef ParentName="EggUnfertBase">
+		<defName>BMT_EggsacTarimtulaUnfertilized</defName>
+		<label>tarimtula egg sac (unfert.)</label>
+		<description>An unfertilized tarimtula egg sac. It can be eaten raw, but it's much, much better cooked.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>BMT_Oasis/Animal/Tarimtula/SpiderEggsac</texPath>
+			<color>(115,130,80)</color>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>27.0</MarketValue>
+		</statBases>
+	</ThingDef>
+	
+	
 </Defs>
