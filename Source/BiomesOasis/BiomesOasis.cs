@@ -11,8 +11,7 @@ namespace BiomesOasis
 		static BiomesOasis()
 		{
 			new Harmony("biomesoasis").PatchAll();
-			// Register WorldGenInfos in Biomes! Core.
-			WorldGenInfoHandler.Register<WorldGenInfo_OasisPresence>();
+
 		}
 	}
 }

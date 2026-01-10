@@ -21,7 +21,8 @@
 		<plantDensity>0.65</plantDensity>
 		<settlementSelectionWeight>0.01</settlementSelectionWeight>
 		<movementDifficulty>2</movementDifficulty>
-		<texture>World/Biomes/desert</texture>
+		<!-- <texture>World/Biomes/desert</texture> -->
+		<texture>BMT_Oasis/World/MapGraphics/OasisTemp</texture>
 		<forageability>1</forageability>
 		<foragedFood>RawBerries</foragedFood>
 		<wildPlantRegrowDays>15</wildPlantRegrowDays>
