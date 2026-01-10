@@ -10,6 +10,7 @@
 			<MarketValue>80</MarketValue>
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
 			<ComfyTemperatureMax>55</ComfyTemperatureMax>
+			<Wildness>0.50</Wildness>
 		</statBases>
 		<race>
 			<herdAnimal>true</herdAnimal>
@@ -18,7 +19,6 @@
 			<baseHungerRate>0.30</baseHungerRate>
 			<foodType>VegetarianRoughAnimal</foodType>
 			<leatherDef>Leather_Bird</leatherDef>
-			<wildness>0.50</wildness>
 			<trainability>None</trainability>
 			<petness>0.20</petness>
 			<nuzzleMtbHours>24</nuzzleMtbHours>

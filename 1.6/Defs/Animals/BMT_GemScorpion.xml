@@ -13,6 +13,7 @@
 			<MarketValue>200</MarketValue>
 			<LeatherAmount>0</LeatherAmount>
 			<ToxicResistance>0.2</ToxicResistance>
+			<Wildness>0.95</Wildness>
 		</statBases>
 		<uiIconScale>2</uiIconScale>
 		<tools>
@@ -68,7 +69,6 @@
 			<baseHungerRate>0.10</baseHungerRate>
 			<baseHealthScale>0.4</baseHealthScale>
 			<useMeatFrom>Megaspider</useMeatFrom>
-			<wildness>0.95</wildness>
 			<trainability>Intermediate</trainability>
 			<lifeExpectancy>6</lifeExpectancy>
 			<lifeStageAges>

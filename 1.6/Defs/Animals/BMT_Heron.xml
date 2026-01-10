@@ -9,6 +9,7 @@
 			<MoveSpeed>3.6</MoveSpeed>
 			<MarketValue>100</MarketValue>
 			<ComfyTemperatureMin>-8</ComfyTemperatureMin>
+			<Wildness>0.45</Wildness>
 		</statBases>
 		<race>
 			<herdAnimal>false</herdAnimal>
@@ -18,7 +19,6 @@
 			<predator>true</predator>
 			<maxPreyBodySize>0.3</maxPreyBodySize>
 			<foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
-			<wildness>0.45</wildness>
 			<trainability>None</trainability>
 			<lifeExpectancy>9</lifeExpectancy>
 			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>

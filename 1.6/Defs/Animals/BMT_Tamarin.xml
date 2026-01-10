@@ -10,6 +10,7 @@
 			<MarketValue>100</MarketValue>
 			<ComfyTemperatureMin>-5</ComfyTemperatureMin>
 			<ComfyTemperatureMax>50</ComfyTemperatureMax>
+			<Wildness>0.60</Wildness>
 		</statBases>
 		<uiIconScale>1.5</uiIconScale>
 		<tools>
@@ -62,7 +63,6 @@
 			<foodType>OmnivoreRoughAnimal</foodType>
 			<leatherDef>Leather_Light</leatherDef>
 			<trainability>Advanced</trainability>
-			<wildness>0.60</wildness>
 			<nuzzleMtbHours>24</nuzzleMtbHours>
 			<gestationPeriodDays>16</gestationPeriodDays>
 			<lifeExpectancy>30</lifeExpectancy>

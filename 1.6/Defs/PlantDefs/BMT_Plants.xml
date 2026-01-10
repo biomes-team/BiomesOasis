@@ -77,7 +77,7 @@
 				</terrainTags>
 			</li>
 		</modExtensions>
-		<hideAtSnowDepth>0.5</hideAtSnowDepth>
+		<hideAtSnowOrSandDepth>0.5</hideAtSnowOrSandDepth>
 		<selectable>true</selectable>
 		<plant>
 			<fertilityMin>0.1</fertilityMin>
@@ -123,7 +123,7 @@
 			<texPath>BMT_Oasis/Plant/Anemone</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
-		<hideAtSnowDepth>0.5</hideAtSnowDepth>
+		<hideAtSnowOrSandDepth>0.5</hideAtSnowOrSandDepth>
 		<ingestible/>
 		<plant>
 			<fertilitySensitivity>0.0</fertilitySensitivity>

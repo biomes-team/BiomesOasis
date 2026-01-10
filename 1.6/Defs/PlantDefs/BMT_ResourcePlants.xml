@@ -28,7 +28,7 @@
 				</terrainTags>
 			</li>
 		</modExtensions>
-		<hideAtSnowDepth>0.5</hideAtSnowDepth>
+		<hideAtSnowOrSandDepth>0.5</hideAtSnowOrSandDepth>
 		<selectable>true</selectable>
 		<neverMultiSelect>true</neverMultiSelect>
 		<plant>
@@ -71,7 +71,7 @@
 				</terrainTags>
 			</li>
 		</modExtensions>
-		<hideAtSnowDepth>0.5</hideAtSnowDepth>
+		<hideAtSnowOrSandDepth>0.5</hideAtSnowOrSandDepth>
 		<selectable>true</selectable>
 		<neverMultiSelect>true</neverMultiSelect>
 		<plant>

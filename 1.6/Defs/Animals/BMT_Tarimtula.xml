@@ -13,6 +13,7 @@
 			<ArmorRating_Blunt>0.05</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.10</ArmorRating_Sharp>
 			<ToxicResistance>0.2</ToxicResistance>
+			<Wildness>0.85</Wildness>
 		</statBases>
 		<uiIconScale>1.15</uiIconScale>
 		<tools>
@@ -42,7 +43,6 @@
 			<baseBodySize>1.2</baseBodySize>
 			<baseHealthScale>2.5</baseHealthScale>
 			<useMeatFrom>Megaspider</useMeatFrom>
-			<wildness>0.85</wildness>
 			<lifeExpectancy>8</lifeExpectancy>
 			<herdAnimal>true</herdAnimal>
 			<manhunterOnDamageChance>0.05</manhunterOnDamageChance>
