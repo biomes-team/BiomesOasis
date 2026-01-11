@@ -24,10 +24,10 @@ namespace BiomesOasis.Planet
 			{
 				return 0f;
 			}
-			if (tile.hilliness >= Hilliness.Mountainous)
-			{
-				return 0f;
-			}
+			//if (tile.hilliness >= Hilliness.Mountainous)
+			//{
+			//	return 0f;
+			//}
 
 			//this should make it only spawn on desert tiles, I think
 			float desertScore = Math.Max(BiomeWorkerUtil.DesertScore(tile), BiomeWorkerUtil.ExtremeDesertScore(tile));
