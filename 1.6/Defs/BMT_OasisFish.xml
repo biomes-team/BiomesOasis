@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="FishBase" MayRequire="Ludeon.RimWorld.Odyssey">
+    <defName>BMT_Fish_Mirrortail</defName>
+    <label>mirrortail</label>
+    <description>A small, colorful freshwater fish. While edible, mirrortail are rarely eaten due to their small size and low nutrition value. Instead, mirrortails are usually sold for their unique reflective scales.</description>
+    <graphicData>
+      <texPath>BMT_Oasis/Item/Mirrortail</texPath>
+    </graphicData>
+    <statBases>
+      <Nutrition>0.1</Nutrition>
+      <MarketValue>22</MarketValue>
+    </statBases>
+  </ThingDef>
+
+  <ThingDef ParentName="FishBase" MayRequire="Ludeon.RimWorld.Odyssey">
+    <defName>BMT_Fish_RainbowTrout</defName>
+    <label>rainbow trout</label>
+    <description>Large freshwater fish that inhabits warm oases. Their large size means they provide more nutrition than most fish.</description>
+    <graphicData>
+      <texPath>BMT_Oasis/Item/RainbowTrout</texPath>
+    </graphicData>
+    <statBases>
+      <Nutrition>0.4</Nutrition>
+      <Mass>1.3</Mass>
+      <MarketValue>29</MarketValue>
+    </statBases>
+  </ThingDef>
+  
+
+</Defs>
