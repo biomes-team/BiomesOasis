@@ -176,8 +176,7 @@
 			<BMT_DuneStrider>0.05</BMT_DuneStrider>
 
 			<!-- Predators -->
-			<BMT_LandOctopus>0.1</BMT_LandOctopus>
-			<BMT_Sutekh>0.05</BMT_Sutekh>
+			<BMT_Sandstalker>0.05</BMT_Sandstalker>
 			<BMT_Sunsnake>0.07</BMT_Sunsnake>
 			<BMT_GemScorpion>0.07</BMT_GemScorpion>
 
