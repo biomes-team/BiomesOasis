@@ -4,7 +4,7 @@
 	<ThingDef ParentName="BigBirdThingBase">
 		<defName>BMT_Heron</defName>
 		<label>heron</label>
-		<description>A white bird with a long neck and sharp beak for impaling prey.</description>
+		<description>A white bird with a long neck and sharp beak for impaling prey. It is deeply feared by amphibians.</description>
 		<statBases>
 			<MoveSpeed>3.6</MoveSpeed>
 			<MarketValue>100</MarketValue>

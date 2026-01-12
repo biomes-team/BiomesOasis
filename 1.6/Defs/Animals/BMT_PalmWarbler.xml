@@ -4,7 +4,7 @@
 	<ThingDef ParentName="BigBirdThingBase">
 		<defName>BMT_PalmWarbler</defName>
 		<label>palm warbler</label>
-		<description>A small bird commonly found in oases.</description>
+		<description>A small bird commonly found in oases. It is easily spotted for its colorful feathers.</description>
 		<statBases>
 			<MoveSpeed>4.6</MoveSpeed>
 			<MarketValue>80</MarketValue>
@@ -114,7 +114,7 @@
 					<color>(0.713,0.208,0.325)</color>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Emu/Dessicated_Emu</texPath>
+					<texPath>Things/Pawn/Animal/Chicken/Dessicated_Chicken</texPath>
 					<drawSize>0.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
@@ -125,7 +125,7 @@
 					<color>(0.713,0.208,0.325)</color>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Emu/Dessicated_Emu</texPath>
+					<texPath>Things/Pawn/Animal/Chicken/Dessicated_Chicken</texPath>
 					<drawSize>0.60</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
@@ -136,7 +136,7 @@
 					<color>(0.713,0.208,0.325)</color>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Emu/Dessicated_Emu</texPath>
+					<texPath>Things/Pawn/Animal/Chicken/Dessicated_Chicken</texPath>
 					<drawSize>0.70</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>

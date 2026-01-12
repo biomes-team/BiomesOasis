@@ -4,7 +4,78 @@
 	<ThingDef ParentName="ThingBaseWolf">
 		<defName>BMT_Sandstalker</defName>
 		<label>sandstalker</label>
-		<description>Famed for its role as an apex predator in the deserts, the sound of its rattle-tail strikes fear into the hearts of desert dwellers everywhere.</description>
+		<description>Famed for its role as an apex predator in the deserts, the sound of its rattle-tail strikes fear into the hearts of desert dwellers everywhere. It is capable of withstanding both higher temperatures and more toxic environments than most other desert species due to its engineered hybrid nature.</description>
+    <statBases>
+      <MoveSpeed>5.0</MoveSpeed>
+      <MarketValue>475</MarketValue>
+      <ComfyTemperatureMin>-40</ComfyTemperatureMin>
+	  <ComfyTemperatureMax>60</ComfyTemperatureMax>
+      <FilthRate>2</FilthRate>
+      <ToxicEnvironmentResistance>0.8</ToxicEnvironmentResistance>
+      <Wildness>0.6</Wildness>
+    </statBases>
+    <race>
+      <animalType>Canine</animalType>
+      <body>QuadrupedAnimalWithPawsAndTail</body>
+      <predator>true</predator>
+      <petness>0.5</petness>
+      <baseBodySize>1.4</baseBodySize>
+      <baseHungerRate>0.25</baseHungerRate>
+      <baseHealthScale>1.4</baseHealthScale>
+      <maxPreyBodySize>2.3</maxPreyBodySize>
+      <foodType>CarnivoreAnimalStrict</foodType>
+      <leatherDef>Leather_Wolf</leatherDef>
+      <gestationPeriodDays>10</gestationPeriodDays>
+      <nameOnTameChance>1</nameOnTameChance>
+      <trainability>Intermediate</trainability>
+      <specialTrainables>
+        <li MayRequire="Ludeon.RimWorld.Odyssey">AttackTarget</li>
+      </specialTrainables>
+      <manhunterOnTameFailChance>0.40</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>1.00</manhunterOnDamageChance>
+      <litterSizeCurve>
+        <points>
+          <li>(0.5, 0)</li>
+          <li>(1, 1)</li>
+          <li>(2, 1.7)</li>
+          <li>(2.5, 0.7)</li>
+          <li>(3, 0)</li>
+        </points>
+      </litterSizeCurve>
+      <lifeExpectancy>15</lifeExpectancy>
+      <lifeStageAges>
+        <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>0.2</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0.5</minAge>
+          <soundWounded>Pawn_Warg_Wounded</soundWounded>
+          <soundDeath>Pawn_Warg_Death</soundDeath>
+          <soundCall>Pawn_Warg_Call</soundCall>
+          <soundAngry>Pawn_Warg_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+      <soundEating>PredatorLarge_Eat</soundEating>
+      <headPosPerRotation>
+        <li>(0.0, 0, 0.2)</li>
+        <li>(0.3, 0, 0.03)</li>
+        <li>(0.0, 0, -0.16)</li>
+        <li>(-0.3, 0, 0.03)</li>
+      </headPosPerRotation>
+    </race>
+    <tradeTags>
+      <li>AnimalUncommon</li>
+      <li>AnimalFighter</li>
+    </tradeTags>
 		<tools>
 			<li>
 				<label>left claw</label>

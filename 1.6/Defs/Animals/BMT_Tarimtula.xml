@@ -4,7 +4,7 @@
 	<ThingDef ParentName="BaseInsect">
 		<defName>BMT_Tarimtula</defName>
 		<label>tarimtula</label>
-		<description>A giant, genetically-engineered version of the cobalt tarantula.</description>
+		<description>A giant, genetically-engineered version of the cobalt tarantula. It has evolved to have an herbivorous diet.</description>
 		<statBases>
 			<MoveSpeed>3.9</MoveSpeed>
 			<ComfyTemperatureMin>-30</ComfyTemperatureMin>
@@ -40,6 +40,7 @@
 		<race>
 			<body>BMT_GiantSpider</body>
 			<baseHungerRate>0.45</baseHungerRate>
+			<foodType>VegetarianRoughAnimal</foodType>
 			<baseBodySize>1.2</baseBodySize>
 			<baseHealthScale>2.5</baseHealthScale>
 			<useMeatFrom>Megaspider</useMeatFrom>

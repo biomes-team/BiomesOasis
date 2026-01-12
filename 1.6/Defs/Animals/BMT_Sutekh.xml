@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="ThingBaseWolf">
+<!--	<ThingDef ParentName="ThingBaseWolf">
 		<defName>BMT_Sutekh</defName>
 		<label>sutekh</label>
 		<description>A large canine genetically engineered to resemble the Set Animal in ancient Egyptian mythology.</description>
@@ -136,6 +136,6 @@
 			</li>
 		</lifeStages>
 	</PawnKindDef>
-
+-->
 </Defs>
 
