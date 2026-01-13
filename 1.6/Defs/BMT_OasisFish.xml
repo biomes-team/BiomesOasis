@@ -17,7 +17,7 @@
   <ThingDef ParentName="FishBase" MayRequire="Ludeon.RimWorld.Odyssey">
     <defName>BMT_Fish_RainbowTrout</defName>
     <label>rainbow trout</label>
-    <description>Large freshwater fish that inhabits warm oases. Their large size means they provide more nutrition than most fish.</description>
+    <description>Large fish that inhabits warm oases. Their large size means they provide more nutrition than most fish.</description>
     <graphicData>
       <texPath>BMT_Oasis/Item/RainbowTrout</texPath>
     </graphicData>
@@ -28,5 +28,13 @@
     </statBases>
   </ThingDef>
   
-
+  <ThingDef ParentName="FishBase" MayRequire="Ludeon.RimWorld.Odyssey">
+    <defName>BMT_Fish_Bluefin</defName>
+    <label>bluefin</label>
+    <description>A hardy fish frequently found in or near oases. Equally at home in fresh or salt water.</description>
+    <graphicData>
+      <texPath>BMT_Oasis/Item/Bluefin</texPath>
+    </graphicData>
+  </ThingDef>
+  
 </Defs>

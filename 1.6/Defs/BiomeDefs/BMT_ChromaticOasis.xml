@@ -30,17 +30,17 @@
 		<fishTypes MayRequire="Ludeon.RimWorld.Odyssey">
 			<freshwater_Common>
 				<BMT_Fish_Mirrortail MayRequire="Ludeon.RimWorld.Odyssey">1</BMT_Fish_Mirrortail>
+				<BMT_Fish_Bluefin MayRequire="Ludeon.RimWorld.Odyssey">.7</BMT_Fish_Bluefin>
 			</freshwater_Common>
 			<freshwater_Uncommon>
 				<BMT_Fish_RainbowTrout MayRequire="Ludeon.RimWorld.Odyssey">1</BMT_Fish_RainbowTrout>
 			</freshwater_Uncommon>
-			<!-- <saltwater_Common> -->
-				<!-- <Fish_Bluefish MayRequire="Ludeon.RimWorld.Odyssey">1</Fish_Bluefish> -->
-			<!-- </saltwater_Common> -->
-			<!-- <saltwater_Uncommon> -->
-				<!-- <Fish_Tuna MayRequire="Ludeon.RimWorld.Odyssey">1</Fish_Tuna> -->
-				<!-- <Fish_Flounder MayRequire="Ludeon.RimWorld.Odyssey">1</Fish_Flounder> -->
-			<!-- </saltwater_Uncommon> -->
+			<saltwater_Common>
+				<BMT_Fish_Bluefin MayRequire="Ludeon.RimWorld.Odyssey">1</BMT_Fish_Bluefin>
+			</saltwater_Common>
+			<saltwater_Uncommon>
+				<BMT_Fish_RainbowTrout MayRequire="Ludeon.RimWorld.Odyssey">1</BMT_Fish_RainbowTrout>
+			</saltwater_Uncommon>
 			<rareCatchesSetMaker MayRequire="Ludeon.RimWorld.Odyssey">RareFishingCatches_Tropical</rareCatchesSetMaker>
 		</fishTypes>
 		
