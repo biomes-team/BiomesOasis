@@ -9,14 +9,14 @@
 
 		<modExtensions>
 			<li Class="BiomesCore.DefModExtensions.BiomesMap">
-				<!-- <isOasis>true</isOasis> -->
+
 				<oasisOuterTerrain>Soil</oasisOuterTerrain>
 				<oasisShoreTerrain>SoilRich</oasisShoreTerrain>
 				<oasisShallowTerrain>WaterShallow</oasisShallowTerrain>
 				<oasisDeepTerrain>WaterDeep</oasisDeepTerrain>
 
 				<oasisCtrVarPct>15</oasisCtrVarPct>
-				<oasisSizeMapPct>50~50</oasisSizeMapPct>
+				<oasisSizeMapPct>40~70</oasisSizeMapPct>
 				
 				<overlayTexturePath>BMT_Oasis/World/MapGraphics/Oasis</overlayTexturePath>
 			</li>
