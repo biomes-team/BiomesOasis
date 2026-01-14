@@ -9,7 +9,15 @@
 
 		<modExtensions>
 			<li Class="BiomesCore.DefModExtensions.BiomesMap">
-				<isOasis>true</isOasis>
+				<!-- <isOasis>true</isOasis> -->
+				<oasisOuterTerrain>Soil</oasisOuterTerrain>
+				<oasisShoreTerrain>SoilRich</oasisShoreTerrain>
+				<oasisShallowTerrain>WaterShallow</oasisShallowTerrain>
+				<oasisDeepTerrain>WaterDeep</oasisDeepTerrain>
+
+				<oasisCtrVarPct>15</oasisCtrVarPct>
+				<oasisSizeMapPct>50~50</oasisSizeMapPct>
+				
 				<overlayTexturePath>BMT_Oasis/World/MapGraphics/Oasis</overlayTexturePath>
 			</li>
 		</modExtensions>
@@ -87,26 +95,12 @@
 			<li>
 				<terrain>Sand</terrain>
 				<min>-999</min>
-				<max>2.8</max>
+				<max>.85</max>
 			</li>
+
 			<li>
-				<terrain>Soil</terrain>
-				<min>2.8</min>
-				<max>3.7</max>
-			</li>
-			<li>
-				<terrain>SoilRich</terrain>
-				<min>3.7</min>
-				<max>7</max>
-			</li>
-			<li>
-				<terrain>WaterShallow</terrain>
-				<min>7</min>
-				<max>18</max>
-			</li>
-			<li>
-				<terrain>WaterDeep</terrain>
-				<min>18</min>
+				<terrain>SoftSand</terrain>
+				<min>.85</min>
 				<max>999</max>
 			</li>
 		</terrainsByFertility>
@@ -182,9 +176,18 @@
 
 		</wildAnimals>
 		<allowedPackAnimals>
-			<li>Muffalo</li>
+			<li>Dromedary</li>
 			<li>Elephant</li>
 			<li>Alpaca</li>
 		</allowedPackAnimals>
+		
+		
+		<extraGenSteps>
+		  <li>BMT_GenstepOasisElevation</li>
+		  <li>BMT_GenstepOasisTerrain</li>
+		</extraGenSteps>
+		<!-- <preventGenSteps> -->
+		  <!-- <li>RockChunks</li> -->
+		<!-- </preventGenSteps> -->
 	</BiomeDef>
 </Defs>
