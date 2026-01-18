@@ -15,9 +15,13 @@
 				<oasisShallowTerrain>WaterShallow</oasisShallowTerrain>
 				<oasisDeepTerrain>WaterDeep</oasisDeepTerrain>
 
-				<oasisCtrVarPct>15</oasisCtrVarPct>
-				<oasisSizeMapPct>40~70</oasisSizeMapPct>
+				<oasisCtrVarPct>20</oasisCtrVarPct>
+				<oasisSizeMapPct>20~55</oasisSizeMapPct>
 				
+				<oasisShallowPct>0.6</oasisShallowPct>
+				<oasisShorePct>0.3</oasisShorePct>
+				<oasisSurroundingPct>0.2</oasisSurroundingPct>
+				<oasisNoiseRange0_10>3~7</oasisNoiseRange0_10>
 				<overlayTexturePath>BMT_Oasis/World/MapGraphics/Oasis</overlayTexturePath>
 			</li>
 		</modExtensions>
