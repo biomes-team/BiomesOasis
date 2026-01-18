@@ -9,19 +9,18 @@
 
 		<modExtensions>
 			<li Class="BiomesCore.DefModExtensions.BiomesMap">
-
 				<oasisOuterTerrain>Soil</oasisOuterTerrain>
 				<oasisShoreTerrain>SoilRich</oasisShoreTerrain>
 				<oasisShallowTerrain>WaterShallow</oasisShallowTerrain>
 				<oasisDeepTerrain>WaterDeep</oasisDeepTerrain>
 
-				<oasisCtrVarPct>20</oasisCtrVarPct>
-				<oasisSizeMapPct>20~55</oasisSizeMapPct>
-				
-				<oasisShallowPct>0.6</oasisShallowPct>
-				<oasisShorePct>0.3</oasisShorePct>
-				<oasisSurroundingPct>0.2</oasisSurroundingPct>
-				<oasisNoiseRange0_10>3~7</oasisNoiseRange0_10>
+				<oasisCtrVarPct>.25</oasisCtrVarPct>					<!-- max distance from center of map, as a % of map size -->		
+				<oasisSizeMapPct>.20~.55</oasisSizeMapPct>			<!-- oasis size, as % of map size -->
+
+				<oasisShallowPct>0.6</oasisShallowPct>				<!-- % of oasis to be shallow water. 0-1 -->
+				<oasisShorePct>0.3</oasisShorePct>					<!-- width of shore terrain, as a % of oasis size -->
+				<oasisOuterPct>0.2</oasisOuterPct>					<!-- width of outer terrain, as a % of oasis size -->
+				<oasisNoiseRange0_10>3~7</oasisNoiseRange0_10>		<!-- 0 is a perfect circle, 10 is a cluster of lakes -->
 				<overlayTexturePath>BMT_Oasis/World/MapGraphics/Oasis</overlayTexturePath>
 			</li>
 		</modExtensions>
