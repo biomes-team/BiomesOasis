@@ -82,6 +82,7 @@
 		</comps>
 		<tradeTags>
 			<li>AnimalInsect</li>
+            <li>AnimalExotic</li>
 		</tradeTags>
 	</ThingDef>
 

@@ -14,8 +14,8 @@
 				<oasisShallowTerrain>WaterShallow</oasisShallowTerrain>
 				<oasisDeepTerrain>WaterDeep</oasisDeepTerrain>
 
-				<oasisCtrVarPct>.25</oasisCtrVarPct>					<!-- max distance from center of map, as a % of map size -->		
-				<oasisSizeMapPct>.20~.55</oasisSizeMapPct>			<!-- oasis size, as % of map size -->
+				<oasisCtrVarPct>.25</oasisCtrVarPct>				<!-- max distance from center of map, as a % of map size -->		
+				<oasisSizeMapPct>.25~.55</oasisSizeMapPct>			<!-- oasis size, as % of map width -->
 
 				<oasisShallowPct>0.6</oasisShallowPct>				<!-- % of oasis to be shallow water. 0-1 -->
 				<oasisShorePct>0.3</oasisShorePct>					<!-- width of shore terrain, as a % of oasis size -->

@@ -12,7 +12,7 @@
 			<ComfyTemperatureMax>50</ComfyTemperatureMax>
 			<Wildness>0.60</Wildness>
 		</statBases>
-		<uiIconScale>1.5</uiIconScale>
+		<uiIconScale>1.0</uiIconScale>
 		<tools>
 			<li>
 				<label>left fist</label>
