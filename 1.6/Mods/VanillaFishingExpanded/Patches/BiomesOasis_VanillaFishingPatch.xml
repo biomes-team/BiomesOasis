@@ -3,6 +3,7 @@
 
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/VCE_Fishing.BiomeTempDef[defName="VCEF_BiomeWarm"]/biomes</xpath>
+		<success>Always</success>
 		<value>
 			<li>BMT_ChromaticOasis</li>
 		</value>
