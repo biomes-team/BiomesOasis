@@ -45,7 +45,7 @@
 		<li IfModActive="Gargamiel.PokeWorld">1.6/Mods/PokeWorld</li>
 		<li IfModActive="ReGrowth.BOTR.ExtinctAnimalsPack">1.6/Mods/ReGrowthExtinctAnimals</li>
 		<li IfModActive="VanillaExpanded.VanillaAnimalsExpanded">1.6/Mods/VanillaAnimalsExpanded</li>
-		<li IfModActive="VanillaExpanded.VCEF">1.6/Mods/VanillaFishingExpanded</li>
+		<li IfModActive="VanillaExpanded.VCEF" IfModNotActive="Ludeon.Rimworld.Odyssey">1.6/Mods/VanillaFishingExpanded</li>
 		<li IfModActive="VanillaExpanded.VPlantsE">1.6/Mods/VanillaPlantsExpanded</li>
 		<li IfModActive="VanillaExpanded.VPlantsEMore">1.6/Mods/VanillaPlantsExpandedMore</li>
 		<li IfModActive="dismarzero.VGP.VGPVegetableGarden">1.6/Mods/VGPVegetableGarden</li>
