@@ -11,7 +11,7 @@
 			<AEXP_Crocodile>0.1</AEXP_Crocodile>
 			<AEXP_DesertTortoise>0.9</AEXP_DesertTortoise>
 			<AEXP_GilaMonster>0.4</AEXP_GilaMonster>
-			<AEXP_Gorilla>0.5</AEXP_Gorilla>
+			<!-- <AEXP_Gorilla>0.5</AEXP_Gorilla> -->
 			<AEXP_Hyena>0.6</AEXP_Hyena>
 			<AEXP_Jaguar>0.1</AEXP_Jaguar>
 			<AEXP_Kangaroo>0.3</AEXP_Kangaroo>
